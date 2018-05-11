@@ -4,7 +4,7 @@
 * [硬件参数](Hardware—parameters.md)
 * [接口定义](connection.md)
 * [编译命令](building-firmware.md)
-* [外围硬件](Peripherals.md)
+* [外围硬件](peripherals.md)
  
 
 
