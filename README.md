@@ -2,5 +2,5 @@
 
 ---
 
-![](/assets/v5_02.jpg)
+![](/assets/pixhack_v5.jpg)
 
