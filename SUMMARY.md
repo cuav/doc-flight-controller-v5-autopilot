@@ -1,7 +1,6 @@
 # Table of content
 
-* [概述](README.md)
-* [技术参数](pixhck-v5.md)
+* [pixhack v5自动驾驶仪](pixhck-v5.md)
 
 
 
