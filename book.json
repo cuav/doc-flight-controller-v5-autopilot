@@ -3,7 +3,6 @@
   "description": "pixhack v5说明文档",
   "language": "zh-hans",
   "plugins": [
-    "richquotes",
     "-sharing",
     "-highlight",
     "-livereload",
