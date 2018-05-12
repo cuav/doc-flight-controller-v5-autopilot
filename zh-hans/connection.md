@@ -1,6 +1,6 @@
 ### 接口定义{#接口定义}
 ![](/assets/pixhack-v5-Connectors.jpg)
-![Pixhack v5](../../assets/flight_controller/pixhack-v5/pixhack-v5-Connectors.jpg.jpg)
+![Pixhack v5](../../assets/flight-controller/pixhack-v5/pixhack-v5-Connectors.jpg)
 
 
 
