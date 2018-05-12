@@ -19,7 +19,7 @@ The board is  is in turn based on the [Pixhawk-project](https://pixhawk.org/) **
   * Barometer: MS5611
 * GPS: ublox Neo-M8N GPS/GLONASS receiver; integrated magnetometer IST8310
 * Interfaces:
-  * 8-16 PWM outputs (8 from IO, 8 from FMU)
+  * 8-14 PWM outputs (6 from IO, 8 from FMU)
   * 3 dedicated PWM/Capture inputs on FMU
   * Dedicated R/C input for CPPM
   * Dedicated R/C input for Spektrum / DSM and S.Bus with analog / PWM RSSI input
