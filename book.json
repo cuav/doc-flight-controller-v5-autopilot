@@ -22,6 +22,11 @@
         "navAjaxUrl": "/nav.json",
         "brand": {
              "url": "/"
+             "richquotes":{
+             "tip": {
+             "alert": "success",
+             "picto": "fa-thumbs-o-up"
+          }
         }
       }
     }
