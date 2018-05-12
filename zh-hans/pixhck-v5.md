@@ -1,8 +1,6 @@
 # 概述{#概述}
 ---
-
-![](/assets/pixhack-v5.jpg)
-
+![Pixhack v5](../assets/flight-controller/pixhack-v5/pixhack-v5.jpg)
 ### 全新的V5 CORE 平台
 
 PixHack V5采用了全新的V5 CORE平台；将飞控核心部分集成于V5 core上，底板可拆卸，只作为对外接口载体，给予消费者定制化的空间，用户可根据自身需求自行设计自己的底板。
@@ -61,8 +59,8 @@ PixHack V5采用了全新的V5 CORE平台；将飞控核心部分集成于V5 cor
 | 重量 | 90g |
 
 ### 接口定义{#接口定义}
-![](/assets/pixhack-v5-Connectors.jpg)
 
+![Pixhack v5](../assets/flight-controller/pixhack-v5/pixhack-v5-connectors.jpg)
 > **Warning** RCIN接口只限于给遥控器供电，不可接入任何电源/负载.
 
 ### 固件编译命令{#编译命令}
