@@ -3,6 +3,7 @@
   "description": "pixhack v5说明文档",
   "language": "zh-hans",
   "plugins": [
+    "richquotes",
     "-sharing",
     "-highlight",
     "-livereload",
@@ -20,12 +21,7 @@
       "navbar": {
         "navAjaxUrl": "/nav.json",
         "brand": {
-             "url": "/"
-             "richquotes":{
-             "tip": {
-             "alert": "success",
-             "picto": "fa-thumbs-o-up"
-          }
+          "url": "/"
         }
       }
     }
