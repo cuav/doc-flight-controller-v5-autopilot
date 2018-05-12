@@ -115,6 +115,6 @@ Any multicopter / airplane / rover or boat that can be controlled with normal RC
 
 ## Further info
 
-- [Pixhawk 4 Technical Data Sheet]() <!-- Later change to holybro wesbite (https://github.com/PX4/Hardware/blob/master/FMUv5/Pixhawk4-Datasheet.pdf). -->
+- [Pixhack 5 Technical Data Sheet]() <!-- Later change to holybro wesbite (https://github.com/PX4/Hardware/blob/master/FMUv5/Pixhawk4-Datasheet.pdf). -->
 - [FMUv5 reference design pinout](https://docs.google.com/spreadsheets/d/1-n0__BYDedQrc_2NHqBenG1DNepAgnHpSGglke-QQwY/edit#gid=912976165). 
 - [Pixhawk project](https://pixhawk.org/modules/start) <!-- update with pixhawk.org pixhawk4 url-->
