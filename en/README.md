@@ -3,8 +3,7 @@
 *Pixhack v5*<sup>&reg;</sup> is an advanced autopilot designed and made in CUAV<sup>&reg;</sup> . It is optimized to run PX4 version 1.7, suitable for academic and commercial developers. intended primarily for manufacturers of commercial systems.
 
 The board is  is in turn based on the [Pixhawk-project](https://pixhawk.org/) **FMUv5** open hardware design. It runs PX4 on the [NuttX](http://nuttx.org) OS, and is fully compatible with both PX4 <sup>&reg;</sup>  firmware.
-
-<img src="../../assets/flight_controller/pixhawk4/pixhawk4_hero_upright.jpg" width="200px" title="Pixhawk4 Upright Image" /> <img src="../../assets/flight_controller/pixhawk4/pixhawk4_logo_view.jpg" width="420px" title="Pixhawk4 Image" /> 
+![Pixhack v5](../assets/flight-controller/pixhack-v5/pixhack-v5.jpg)
 
 ## Quick Summary
 
@@ -17,7 +16,7 @@ The board is  is in turn based on the [Pixhawk-project](https://pixhawk.org/) **
   * Accel/Gyro: BMI055
   * Magnetometer: IST8310
   * Barometer: MS5611
-* GPS: ublox Neo-M8N GPS/GLONASS receiver; integrated magnetometer IST8310
+
 * Interfaces:
   * 8-14 PWM outputs (6 from IO, 8 from FMU)
   * 3 dedicated PWM/Capture inputs on FMU
@@ -25,27 +24,24 @@ The board is  is in turn based on the [Pixhawk-project](https://pixhawk.org/) **
   * Dedicated R/C input for Spektrum / DSM and S.Bus with analog / PWM RSSI input
   * Dedicated S.Bus servo output
   * 5 general purpose serial ports
-  * 3 I2C ports
+  * 4 I2C ports
   * 4 SPI buses
   * Up to 2 CANBuses for dual CAN with serial ESC
   * Analog inputs for voltage / current of 2 batteries
 * Power System:
-  * Power module output: 4.9~5.5V
+  * Power module output: 4.3~5.4V
   * USB Power Input: 4.75~5.25V
   * Servo Rail Input: 0~36V
 * Weight and Dimensions:
-  * Weight: 15.8g
+  * Weight: 90g
   * Dimensions: 44x84x12mm
 * Other Characteristics:
-  * Operating temperature: -40 ~ 85°c
-
-Additional information can be found in the [Pixhawk 4 Technical Data Sheet]().
-<!-- Later change to holybro wesbite (https://github.com/PX4/Hardware/blob/master/FMUv5/Pixhawk4-Datasheet.pdf). -->
+  * Operating temperature: -20 ~ 80°c
 
 
 ## Purchase
 
-Order from [Holybro](https://shop.holybro.com/pixhawk-4beta-launch_p1089.html).
+Order from [CUAV]().
 
 
 ## Connectors
