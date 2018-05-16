@@ -27,7 +27,7 @@
 | ** Support model ** |  |
 | Px4 firmware | Copter/ plane/QuadPlane /Rover , etc. |
 | Working environment and physical parameters |  |
-| Power module input | 4.3~ 5.4 V |
+| Power  input | 4.3~ 5.4 V |
 | USB Power Input | 5V +- 0.25v |
 | Servo Rail Input | 0-36v |
 | Operating temperature | -20 ~ 80°c |
