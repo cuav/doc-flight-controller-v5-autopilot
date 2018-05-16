@@ -90,7 +90,7 @@ The [Pixhawk 4 Wiring Quick Start](../assembly/quick_start_pixhawk4.md) provides
 ## Debug Port
 
 The system's serial console and SWD interface runs on the **FMU Debug** port, while the I/O console and SWD interface can be accessed via **I/O Debug** port.
-In order to access these ports, the user must remove the *Pixhawk 4* casing. 
+In order to access these ports, the user must remove the *Pixhack v5* casing. 
 
 Both ports have standard serial pinout and can be connected to a standard FTDI cable (3.3V, but it's 5V tolerant) or a [Dronecode probe](https://kb.zubax.com/display/MAINKB/Dronecode+Probe+documentation). 
 The pinout uses the standard Dronecode debug connector pinout. 
