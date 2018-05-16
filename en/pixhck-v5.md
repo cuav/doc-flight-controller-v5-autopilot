@@ -1,11 +1,14 @@
-# 概述{#概述}
+## Summary
+
 ---
+
 ![Pixhack v5](../assets/flight-controller/pixhack-v5/pixhack-v5.jpg)
-### 全新的V5 CORE 平台
 
-PixHack V5采用了全新的V5 CORE平台；将飞控核心部分集成于V5 core上，底板可拆卸，只作为对外接口载体，给予消费者定制化的空间，用户可根据自身需求自行设计自己的底板。
+### The new V5 CORE platform
 
-### 更快的处理器
+PixHack V5 adopts the new V5 CORE platform; the core of the flight controller is integrated on the V5 core, and the bottom plate is detachable. It is only used as the external interface carrier to give consumers the space for customization. Users can design their own backplane according to their own needs.
+
+### 更快的处理器Faster processor
 
 在硬件配置上，pixhack v5抛弃了px4家族原有的STM32F427处理器而选用了更为高级的STM32F765处理器，其主频高达216MHZ并且含有2MB FLASH/512K RAM，主频更高，RAM更大，速度将实现大幅度提升。
 
@@ -22,7 +25,7 @@ PixHack V5采用了全新的V5 CORE平台；将飞控核心部分集成于V5 cor
 5、金属外壳内置减震；  
 6、支持众多丰富机型。
 
-## 硬件参数{#硬件参数}
+## 硬件参数 {#硬件参数}
 
 |  | **硬件参数** |
 | :--- | :--- |
@@ -58,15 +61,18 @@ PixHack V5采用了全新的V5 CORE平台；将飞控核心部分集成于V5 cor
 | 长X宽X高 | 89\*42.5\*33mm |
 | 重量 | 90g |
 
-### 接口定义{#接口定义}
+### 接口定义 {#接口定义}
 
 ![Pixhack v5](../assets/flight-controller/pixhack-v5/pixhack-v5-connectors.jpg)
+
 > **Warning** RCIN接口只限于给遥控器供电，不可接入任何电源/负载.
 
-### 固件编译命令{#编译命令}
+### 固件编译命令 {#编译命令}
+
 `make px4fmu-v5_default upload`
 
-### 外围设备{#外围设备}
+### 外围设备 {#外围设备}
+
 * 空速计传感器
 * 遥测无线电模块
 * 测距仪/距离传感器 
