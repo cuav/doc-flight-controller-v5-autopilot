@@ -67,13 +67,13 @@ The PixHack V5 is similar to the pixhawk2.1 in terms of sensors. It also uses th
 |  | 89\*42.5\*33mm |
 | Weight | 90g |
 
-### Interface definition {#接口定义}
+### Interface definition {#Interface definition}
 
 ![Pixhack v5](../assets/flight-controller/pixhack-v5/pixhack-v5-connectors.jpg)
 
 > Warning The RCIN interface is limited to powering the remote control and cannot be connected to any power/load.
 
-### Firmware compilation command {#编译命令}
+### Firmware compilation command {#Firmware compilation command}
 
 `make px4fmu-v5_default upload`
 
