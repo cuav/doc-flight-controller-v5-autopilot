@@ -1,4 +1,4 @@
-## Hardware parameters {#硬件参数}
+## Hardware parameters {#Hardware parameters}
 
 |  | **Hardware parameters** |
 | :--- | :--- |
