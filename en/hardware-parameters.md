@@ -26,7 +26,7 @@
 |  |  |
 | ** Support model ** |  |
 | Px4 firmware | Copter/ plane/QuadPlane /Rover , etc. |
-| Working environment and physical parameters |  |
+|** Working environment and physical parameters**  |  |
 | Power  input | 4.3~ 5.4 V |
 | USB  Input | 5V +- 0.25v |
 | Servo  Input | 0-36v |
