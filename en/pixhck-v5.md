@@ -8,24 +8,29 @@
 
 PixHack V5 adopts the new V5 CORE platform; the core of the flight controller is integrated on the V5 core, and the bottom plate is detachable. It is only used as the external interface carrier to give consumers the space for customization. Users can design their own backplane according to their own needs.
 
-### 更快的处理器Faster processor
+### Faster processor
 
-在硬件配置上，pixhack v5抛弃了px4家族原有的STM32F427处理器而选用了更为高级的STM32F765处理器，其主频高达216MHZ并且含有2MB FLASH/512K RAM，主频更高，RAM更大，速度将实现大幅度提升。
+In the hardware configuration, pixhack v5 abandoned the px4 family's original STM32F427 processor and chose a more advanced STM32F765 processor, its frequency up to 216MHZ and contains 2MB FLASH/512K RAM, higher frequency, greater RAM, Speed will be greatly improved.
 
-### 更稳定的传感器
+### More stable sensors
 
-传感器方面PixHack V5与pixhawk2.1一样，同样采用三度冗余imu，但其选用了更为稳定的ICM-20602/ICM-20689/BMI055/IST8310等传感器，提高了其在不同温度下的适应能力。
+The PixHack V5 is similar to the pixhawk2.1 in terms of sensors. It also uses the third-degree redundant imu, but it chose a more stable ICM-20602/ICM-20689/BMI055/IST8310 sensor to improve its adaptability to different temperatures. .
 
-### 除此之外，V5还具有以下优势：
+### In addition, V5 also has the following advantages:
 
-1、支持RTK厘米定位；  
-2、模块化设计方便集成；  
-3、内置3组IMU冗余；  
-4、丰富的I/O端口；  
-5、金属外壳内置减震；  
-6、支持众多丰富机型。
+1, support RTK centimeter positioning;
 
-## 硬件参数 {#硬件参数}
+2. Modular design facilitates integration;
+
+3, built-in 3 sets of IMU redundancy;
+
+4, rich I / O port;
+
+5, metal housing built-in shock absorption;
+
+6, support for many rich models.
+
+## Hardware parameters {#硬件参数}
 
 |  | **硬件参数** |
 | :--- | :--- |
