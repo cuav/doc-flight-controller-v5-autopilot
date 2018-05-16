@@ -70,13 +70,6 @@ Under these conditions the system will not draw any power (will not be operation
 1. **POWER1** and **POWER2** inputs (operational range 4.1V to 5.7V, 0V to 10V undamaged)
 1. **USB** input (operational range 4.1V to 5.7V, 0V to 6V undamaged)
 1. Servo input: VDD_SERVO pin of **FMU PWM OUT** and **I/O PWM OUT** (0V to 42V undamaged)
-
-
-## Assembly/Setup 
-
-The [Pixhawk 4 Wiring Quick Start](../assembly/quick_start_pixhawk4.md) provides instructions on how to assemble required/important peripherals including GPS, Power Management Board etc.
-
-
 ## Building Firmware
 
 `make px4fmu-v5_default upload`
