@@ -1,6 +1,6 @@
 # Table of content
 
-* [PIXHACK V5自动驾驶仪](README.md)
+* [PIXHACK V5自动驾驶仪](hardware-parameters.md)
 * [硬件参数](hardware-parameters.md)
 * [接口定义](connection.md)
 * [编译命令](building-firmware.md)
