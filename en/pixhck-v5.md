@@ -35,17 +35,18 @@ The PixHack V5 is similar to the pixhawk2.1 in terms of sensors. It also uses th
 |  | **Hardware parameters** |
 | :--- | :--- |
 | Mian FMU Procceor | STM32F7653  \(32 Bit Arm® Cortex®-M7, 216MHz, 2MB flash, 512KB RAM\) |
-| On-board Sensors | STM32F100 \(32 Bit Arm® Cortex®-M3, 24MHz, 8KB SRAM\) |
+| On-board Sensors | STM32F100 \(32 Bit Arm® Cortex®-M3, 24MHz, 8KB SRAM\) |
 | **Sensor** |  |
 | Accelerator | ICM-20602/ICM-20689/BMI055 |
-| Accel/Gyro | ICM-20602/ICM-20689/BMI055 |
+|  | Accel/Gyro |
+|  | ICM-20602/ICM-20689/BMI055 |
 | Electronic compass | IST8310 |
 | Barometer | MS5611 |
 | Interface |  |
 | UART serial port | 5 |
 | 12c | 4 |
 | PWM Out put | Standard 8 pwm IO 6 programmable IO |
-| R/C signal input protocol | PPM/SBUS/DSM/DSM2 |
+| R/C signal input protocol | PPM/SBUS/DSM/DSM2 |
 | RSSI input | Pwm or 3. 3 analog voltage |
 | CAN standard bus | 2 |
 | Current voltage input | 2 |
@@ -61,7 +62,7 @@ The PixHack V5 is similar to the pixhawk2.1 in terms of sensors. It also uses th
 | PM working voltage | 4.5 ~ 5.5 V |
 | USB working voltage | 5V +- 0.25v |
 | Servo  Input | 0-36v |
-| Operating temperature | -40 ~ 85°c |
+| Operating temperature | -40 ~ 85°c |
 | Size |  |
 |  | 89\*42.5\*33mm |
 | Weight | 90g |
@@ -70,17 +71,17 @@ The PixHack V5 is similar to the pixhawk2.1 in terms of sensors. It also uses th
 
 ![Pixhack v5](../assets/flight-controller/pixhack-v5/pixhack-v5-connectors.jpg)
 
-> **Warning** RCIN接口只限于给遥控器供电，不可接入任何电源/负载.
+> Warning The RCIN interface is limited to powering the remote control and cannot be connected to any power/load.
 
-### 固件编译命令 {#编译命令}
+### Firmware compilation command {#编译命令}
 
 `make px4fmu-v5_default upload`
 
-### 外围设备 {#外围设备}
+### peripheral equipment {#外围设备}
 
-* 空速计传感器
-* 遥测无线电模块
-* 测距仪/距离传感器 
+* Airspeed sensor
+* Telemetry radio module
+* Rangefinder/Distance Sensor
 
 
 
