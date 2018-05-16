@@ -2,7 +2,7 @@
 
 |  | **Hardware parameters** |
 | :--- | :--- |
-| Main FMU Processor | STM32F7653  \(32 Bit Arm® Cortex®-M7, 216MHz, 2MB flash, 512KB RAM\) |
+| Main FMU Processor | STM32F765 \(32 Bit Arm® Cortex®-M7, 216MHz, 2MB flash, 512KB RAM\) |
 | IO Processor | STM32F100 \(32 Bit Arm® Cortex®-M3, 24MHz, 8KB SRAM\) |
 | **On-board Sensors** |  |
 | Accel | ICM-20602/ICM-20689/BMI055 |
