@@ -32,7 +32,7 @@
 | Servo  Input | 0-36v |
 | Operating temperature | -20 ~ 80°c |
 | **Dimensions** |  |
-| long XwideX high | 89\*42.5\*33mm |
+|  | 89\*42.5\*33mm |
 | Weight | 90g |
 
 ## 
