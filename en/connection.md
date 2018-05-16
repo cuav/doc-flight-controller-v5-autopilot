@@ -1,4 +1,4 @@
-### Interface definition {#接口定义}
+### Interface definition {#Interface definition}
 
 ![Pixhack v5](../assets/flight-controller/pixhack-v5/pixhack-v5-connectors.jpg)
 
