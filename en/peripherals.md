@@ -1,7 +1,8 @@
-### 外围设备{#外围设备}
-* 空速计传感器
-* 遥测无线电模块
-* 测距仪/距离传感器 
+### Peripheral Equipment {#外围设备}
+
+* Airspeed sensor
+* Telemetry radio module
+* Rangefinder/Distance Sensor
 
 
 
