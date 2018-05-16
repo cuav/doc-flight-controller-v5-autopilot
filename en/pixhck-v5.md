@@ -77,7 +77,7 @@ The PixHack V5 is similar to the pixhawk2.1 in terms of sensors. It also uses th
 
 `make px4fmu-v5_default upload`
 
-### peripheral equipment {#外围设备}
+### peripheral equipment {#Peripheral Equipment}
 
 * Airspeed sensor
 * Telemetry radio module
