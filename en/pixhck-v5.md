@@ -20,7 +20,7 @@ The PixHack V5 is similar to the pixhawk2.1 in terms of sensors. It also uses th
 
 1, support RTK centimeter positioning;
 
-2. Modular design facilitates integration;
+1. Modular design facilitates integration;
 
 3, built-in 3 sets of IMU redundancy;
 
@@ -32,41 +32,41 @@ The PixHack V5 is similar to the pixhawk2.1 in terms of sensors. It also uses th
 
 ## Hardware parameters {#硬件参数}
 
-|  | **硬件参数** |
+|  | **Hardware parameters** |
 | :--- | :--- |
-| 主处理器 | STM32F7653  \(32 Bit Arm® Cortex®-M7, 216MHz, 2MB flash, 512KB RAM\) |
-| 协处理器 | STM32F100 \(32 Bit Arm® Cortex®-M3, 24MHz, 8KB SRAM\) |
-| **传感器** |  |
-| 加速器 | ICM-20602/ICM-20689/BMI055 |
-| 陀螺仪 | ICM-20602/ICM-20689/BMI055 |
-| 电子罗盘 | IST8310 |
-| 气压计 | MS5611 |
-| **接口** |  |
-| UART串口 | 5 |
+| Mian FMU Procceor | STM32F7653  \(32 Bit Arm® Cortex®-M7, 216MHz, 2MB flash, 512KB RAM\) |
+| On-board Sensors | STM32F100 \(32 Bit Arm® Cortex®-M3, 24MHz, 8KB SRAM\) |
+| **Sensor** |  |
+| Accelerator | ICM-20602/ICM-20689/BMI055 |
+| Accel/Gyro | ICM-20602/ICM-20689/BMI055 |
+| Electronic compass | IST8310 |
+| Barometer | MS5611 |
+| Interface |  |
+| UART serial port | 5 |
 | 12c | 4 |
-| PWM输出 | 标准8 PWM IO+6个可编程IO |
-| 遥控器信号输入协议 | PPM/SBUS/DSM/DSM2 |
-| RSSI输入 | PWM或3.3模拟电压 |
-| CAN标准总线 | 2 |
-| 电流电压输入 | 2 |
-| 安全开关 | 1 |
-| GPS接口 | 1 |
-| Debug/F7 SWD接口 | 1 |
-| USB接口 | 1\(Type-C\) |
-| SPI接口 | 1 |
+| PWM Out put | Standard 8 pwm IO 6 programmable IO |
+| R/C signal input protocol | PPM/SBUS/DSM/DSM2 |
+| RSSI input | Pwm or 3. 3 analog voltage |
+| CAN standard bus | 2 |
+| Current voltage input | 2 |
+| Safety Switch | 1 |
+| GPS Interface | 1 |
+| Debug/F7 SWD Interface | 1 |
+| USB Interface | 1\(Type-C\) |
+| SPI Interface | 1 |
 |  |  |
-| **支持机型** |  |
-| PX4固件 | 固定翼/3-8旋翼/直升机/VTOL垂直起降/无人机/无人船等 |
-| **工作环境及物理参数** |  |
-| PM工作电压 | 4.5 ~ 5.5 V |
-| USB电压 | 5V +- 0.25v |
-| 伺服输入 | 0-36v |
-| 工作温度 | -40 ~ 85°c |
-| **尺寸** |  |
-| 长X宽X高 | 89\*42.5\*33mm |
-| 重量 | 90g |
+| **Support model** |  |
+| Px4 firmware | Fixed-wing / 3-8 rotor / helicopter / vtol vertical take-off / landing / UAV / UAV, etc. |
+| Working environment and physical parameters |  |
+| PM working voltage | 4.5 ~ 5.5 V |
+| USB working voltage | 5V +- 0.25v |
+| Servo  Input | 0-36v |
+| Operating temperature | -40 ~ 85°c |
+| Size |  |
+|  | 89\*42.5\*33mm |
+| Weight | 90g |
 
-### 接口定义 {#接口定义}
+### Interface definition {#接口定义}
 
 ![Pixhack v5](../assets/flight-controller/pixhack-v5/pixhack-v5-connectors.jpg)
 
