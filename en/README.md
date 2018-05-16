@@ -1,4 +1,4 @@
-# Pixhawk 4 
+# Pixhack v5
 
 *Pixhack v5*<sup>&reg;</sup> is an advanced autopilot designed and made in CUAV<sup>&reg;</sup> . It is optimized to run PX4 version 1.7, suitable for academic and commercial developers. intended primarily for manufacturers of commercial systems.
 
