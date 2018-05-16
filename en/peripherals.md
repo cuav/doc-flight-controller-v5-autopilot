@@ -1,4 +1,4 @@
-### Peripheral Equipment {#外围设备}
+### Peripheral Equipment {#Peripheral Equipment}
 
 * Airspeed sensor
 * Telemetry radio module
