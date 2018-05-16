@@ -35,7 +35,7 @@
 |Dimensions| 89\*42.5\*33mm |
 | Weight | 90g |
 
-## 
+
 
 
 
