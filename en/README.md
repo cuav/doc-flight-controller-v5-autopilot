@@ -43,23 +43,9 @@ The board is  is in turn based on the [Pixhawk-project](https://pixhawk.org/) **
 
 Order from [CUAV]().
 
-
-## Connectors
-
-![Pixhawk 4 connectors](../../assets/flight_controller/pixhawk4/pixhawk4-connectors.jpg)
-
-> **Warning** The **DSM/SBUS RC** and **PPM RC** ports are for RC receivers only. These are powered! NEVER connect any servos, power supplies or batteries (or to any connected receiver).
-
-
-## Pinouts
-
-Download *Pixhawk 4* pinouts from [here]( ).
-<!-- link to holybro (https://github.com/PX4/Hardware/blob/master/FMUv5/Pixhawk4-Pinouts.pdf)-->
-
-
 ## Voltage Ratings
 
-*Pixhawk 4* can be triple-redundant on the power supply if three power sources are supplied. The three power rails are: **POWER1**, **POWER2** and **USB**.
+*Pixhach v5* can be triple-redundant on the power supply if three power sources are supplied. The three power rails are: **POWER1**, **POWER2** and **USB**.
 
 > **Note** The output power rails **FMU PWM OUT** and **I/O PWM OUT** (0V to 36V) do not power the flight controller board (and are not powered by it). You must supply power to one of **POWER1**, **POWER2** or **USB** or the board will be unpowered. 
 
@@ -110,7 +96,5 @@ Any multicopter / airplane / rover or boat that can be controlled with normal RC
 
 
 ## Further info
-
-- [Pixhack 5 Technical Data Sheet]() <!-- Later change to holybro wesbite (https://github.com/PX4/Hardware/blob/master/FMUv5/Pixhawk4-Datasheet.pdf). -->
 - [FMUv5 reference design pinout](https://docs.google.com/spreadsheets/d/1-n0__BYDedQrc_2NHqBenG1DNepAgnHpSGglke-QQwY/edit#gid=912976165). 
-- [Pixhawk project](https://pixhawk.org/modules/start) <!-- update with pixhawk.org pixhawk4 url-->
+
