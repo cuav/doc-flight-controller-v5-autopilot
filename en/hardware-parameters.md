@@ -9,15 +9,15 @@
 | Gyro | ICM-20602/ICM-20689/BMI055 |
 | Magnetometer | IST8310 |
 | Barometer | MS5611 |
-| Interfaces |  |
+| **Interfaces **|  |
 | UASRT serial port | 2 |
 | UART serial port | 3 |
 | I2c | 4 |
-| PWM outputs | 6 from IO, 8 from FMU |
+| PWM outputs | 14（6 from IO, 8 from FMU） |
 | R/C signal input protocol | PPM/SBUS/DSM/DSM2 |
 | RSSI input | PWM or 3. 3 analog voltage |
 | CAN Standard bus | 2 |
-| Analog inputs for voltage | 2 |
+| Analog inputs for voltage / current | 2 |
 | Safety switch | 1 |
 | GPS interface | 1 |
 | Debug/F7 SWD interface | 1 |
@@ -25,7 +25,7 @@
 | SPI interface | 1 |
 |  |  |
 | ** Support model ** |  |
-|  | PX4 firmwareFixed-wing / 3-8 rotor / helicopter / vtol vertical take-off / landing / UAV / UAV, etc. |
+| Px4 firmware | Copter/ plane/QuadPlane /Rover , etc. |
 | Working environment and physical parameters |  |
 | Power module output | 4.3~ 5.4 V |
 | USB Power Input | 5V +- 0.25v |
