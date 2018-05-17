@@ -32,20 +32,20 @@ The PixHack V5 is similar to the pixhawk2.1 in terms of sensors. It also uses th
 
 ## Hardware parameters {#Hardware parameters}
 
-| **Hardware parameters** ||
+| **Hardware parameters** |  |
 | :--- | :--- |
 | Mian FMU Procceor | STM32F765  \(32 Bit Arm® Cortex®-M7, 216MHz, 2MB flash, 512KB RAM\) |
 | On-board Sensors | STM32F100 \(32 Bit Arm® Cortex®-M3, 24MHz, 8KB SRAM\) |
 | **Sensor** |  |
-| Accel | ICM-20602/ICM-20689/BMI055 |
-|   Accel | ICM-20602/ICM-20689/BMI055 |
+| Accelerometer | ICM-20602/ICM-20689/BMI055 |
+| gyro | ICM-20602/ICM-20689/BMI055 |
 | compass | IST8310 |
 | Barometer | MS5611 |
-| **Interface **|  |
-| UART  | 3 |
-| UASRT  | 3 |
+| **Interface ** |  |
+| UART | 3 |
+| UASRT | 3 |
 | i2c | 4 |
-| PWM Out put | 14(Standard 8 pwm IO 6 programmable IO )|
+| PWM Out put | 14\(Standard 8 pwm IO 6 programmable IO \) |
 | R/C signal input protocol | PPM/SBUS/DSM/DSM2 |
 | RSSI input | Pwm or 3. 3 analog voltage |
 | CAN standard bus | 2 |
@@ -57,12 +57,12 @@ The PixHack V5 is similar to the pixhawk2.1 in terms of sensors. It also uses th
 | SPI Interface | 1 |
 | **Support model** |  |
 | Px4 firmware | Fixed-wing / 3-8 rotor / helicopter / vtol vertical take-off / landing / UAV / UAV, etc. |
-|** Working environment and physical parameters **|  |
+| ** Working environment and physical parameters ** |  |
 | PM working voltage | 4.5 ~ 5.5 V |
 | USB working voltage | 5V +- 0.25v |
 | Servo  Input | 0-36v |
 | Operating temperature | -40 ~ 85°c |
-| Dimensions and weight|  |
+| Dimensions and weight |  |
 | Dimensions | 89\*42.5\*33mm |
 | Weight | 90g |
 
