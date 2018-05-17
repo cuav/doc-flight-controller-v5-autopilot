@@ -9,7 +9,7 @@
 | Gyro | ICM-20602/ICM-20689/BMI055 |
 | Magnetometer | IST8310 |
 | Barometer: | MS5611 |
-| Interfaces: |  |
+| **Interfaces** |  |
 | UART | 3 |
 | UASRT | 2 |
 | I2c | 4 |
@@ -25,17 +25,17 @@
 | SPI interface | 1 |
 |  |  |
 | ** Support model ** |  |
-|  | PX4 firmwareFixed-wing / 3-8 rotor / helicopter / vtol vertical take-off / landing / UAV / UAV, etc. |
+|PX4 firmwareFixed-wing  |  copter / QUADPlane / Rover/plane, etc. |
 | Working environment and physical parameters |  |
 | Power module output | 4.3~ 5.4 V |
 | USB Power Input | 5V +- 0.25v |
 | Servo Rail Input | 0-36v |
 | Operating temperature | -20 ~ 80°c |
 | **Dimensions** |  |
-| long XwideX high | 89\*42.5\*33mm |
+| longwidehigh | 89\*42.5\*33mm |
 | Weight | 90g |
 
-## 
+
 
 
 
