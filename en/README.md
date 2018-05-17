@@ -29,8 +29,8 @@ The board is  is in turn based on the [Pixhawk-project](https://pixhawk.org/) **
   * Up to 2 CANBuses for dual CAN with serial ESC
   * Analog inputs for voltage / current of 2 batteries
 * Power System:
-  * Power module output: 4.3~5.4V
-  * USB Power Input: 4.75~5.25V
+  * Power: 4.3~5.4V
+  * USB Input: 4.75~5.25V
   * Servo Rail Input: 0~36V
 * Weight and Dimensions:
   * Weight: 90g
