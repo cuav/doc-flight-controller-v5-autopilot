@@ -56,7 +56,7 @@ The PixHack V5 is similar to the pixhawk2.1 in terms of sensors. It also uses th
 | USB Interface | 1\(Type-C\) |
 | SPI Interface | 1 |
 | **Support model** |  |
-| Px4 firmware | Fixed-wing / 3-8 rotor / helicopter / vtol vertical take-off / landing / UAV / UAV, etc. |
+| Px4 firmware | copter / QuadPlane / Rover/plane, etc. |
 | ** Working environment and physical parameters ** |  |
 | PM working voltage | 4.5 ~ 5.5 V |
 | USB working voltage | 5V +- 0.25v |
