@@ -23,7 +23,7 @@
 | Debug/F7 SWD interface | 1 |
 | USB interface | 1\(Type-C\) |
 | SPI interface | 1 |
-|  |  |
+|  
 | ** Support model ** |  |
 | PX4 firmwareFixed-wing | copter / QUADPlane / Rover/plane, etc. |
 | **Working environment and physical parameters ** |  |
