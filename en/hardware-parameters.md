@@ -30,7 +30,7 @@
 | USB Power Input | 5V +- 0.25v |
 | Servo Rail Input | 0-36v |
 | Operating temperature | -20 ~ 80°c |
-| **Dimensions** |  |
+| **Dimensions and weight** |  |
 | long\*wide\*high | 89\*42.5\*33mm |
 | Weight | 90g |
 
