@@ -1,6 +1,6 @@
 ## Hardware parameters {#Hardware parameters}
 
-|  | **Hardware parameters** |
+| **Hardware parameters** |  |
 | :--- | :--- |
 | Main FMU Processor | STM32F765  \(32 Bit Arm® Cortex®-M7, 216MHz, 2MB flash, 512KB RAM\) |
 | IO Processor | STM32F100 \(32 Bit Arm® Cortex®-M3, 24MHz, 8KB SRAM\) |
@@ -23,9 +23,8 @@
 | Debug/F7 SWD interface | 1 |
 | USB interface | 1\(Type-C\) |
 | SPI interface | 1 |
-|  
 | ** Support model ** |  |
-| PX4 firmwareFixed-wing | copter / QUADPlane / Rover/plane, etc. |
+| PX4 firmwareFixed-wing | copter / QuadPlane / Rover/plane, etc. |
 | **Working environment and physical parameters ** |  |
 | Power module output | 4.3~ 5.4 V |
 | USB Power Input | 5V +- 0.25v |
