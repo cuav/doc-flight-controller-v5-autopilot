@@ -26,7 +26,7 @@
 |  |  |
 | ** Support model ** |  |
 |PX4 firmwareFixed-wing  |  copter / QUADPlane / Rover/plane, etc. |
-| Working environment and physical parameters |  |
+| **Working environment and physical parameters **|  |
 | Power module output | 4.3~ 5.4 V |
 | USB Power Input | 5V +- 0.25v |
 | Servo Rail Input | 0-36v |
