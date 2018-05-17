@@ -6,7 +6,7 @@
 | IO Processor | STM32F100 \(32 Bit Arm® Cortex®-M3, 24MHz, 8KB SRAM\) |
 | **On-board Sensors** |  |
 | Accelerometer | ICM-20602/ICM-20689/BMI055 |
-|Gyroscope | ICM-20602/ICM-20689/BMI055 |
+| Gyroscope | ICM-20602/ICM-20689/BMI055 |
 | Magnetometer | IST8310 |
 | Barometer | MS5611 |
 | **Interfaces** |  |
