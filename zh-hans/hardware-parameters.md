@@ -5,7 +5,7 @@
 | 主处理器 | STM32F765  \(32 Bit Arm® Cortex®-M7, 216MHz, 2MB flash, 512KB RAM\) |
 | 协处理器 | STM32F100 \(32 Bit Arm® Cortex®-M3, 24MHz, 8KB SRAM\) |
 | **传感器** |  |
-| 加速器 | ICM-20602/ICM-20689/BMI055 |
+| 加速计 | ICM-20602/ICM-20689/BMI055 |
 | 陀螺仪 | ICM-20602/ICM-20689/BMI055 |
 | 电子罗盘 | IST8310 |
 | 气压计 | MS5611 |
