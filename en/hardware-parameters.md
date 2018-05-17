@@ -8,7 +8,7 @@
 | Accelerometer | ICM-20602/ICM-20689/BMI055 |
 | Gyro | ICM-20602/ICM-20689/BMI055 |
 | Magnetometer | IST8310 |
-| Barometer: | MS5611 |
+| Barometer | MS5611 |
 | **Interfaces** |  |
 | UART | 3 |
 | UASRT | 2 |
