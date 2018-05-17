@@ -37,14 +37,15 @@ The PixHack V5 is similar to the pixhawk2.1 in terms of sensors. It also uses th
 | Mian FMU Procceor | STM32F765  \(32 Bit Arm® Cortex®-M7, 216MHz, 2MB flash, 512KB RAM\) |
 | On-board Sensors | STM32F100 \(32 Bit Arm® Cortex®-M3, 24MHz, 8KB SRAM\) |
 | **Sensor** |  |
-| Accelerator | ICM-20602/ICM-20689/BMI055 |
-|   Accel/Gyro | ICM-20602/ICM-20689/BMI055 |
-| Electronic compass | IST8310 |
+| Accel | ICM-20602/ICM-20689/BMI055 |
+|   Accel | ICM-20602/ICM-20689/BMI055 |
+| compass | IST8310 |
 | Barometer | MS5611 |
 | **Interface **|  |
-| UART serial port | 5 |
+| UART  | 3 |
+| UASRT  | 3 |
 | i2c | 4 |
-| PWM Out put | Standard 8 pwm IO 6 programmable IO |
+| PWM Out put | 14(Standard 8 pwm IO 6 programmable IO )|
 | R/C signal input protocol | PPM/SBUS/DSM/DSM2 |
 | RSSI input | Pwm or 3. 3 analog voltage |
 | CAN standard bus | 2 |
