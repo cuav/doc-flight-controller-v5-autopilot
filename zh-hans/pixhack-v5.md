@@ -29,7 +29,7 @@ PixHack V5采用了全新的V5 CORE平台；将飞控核心部分集成于V5 cor
 
 |  | **硬件参数** |
 | :--- | :--- |
-| 主处理器 | STM32F7653  \(32 Bit Arm® Cortex®-M7, 216MHz, 2MB flash, 512KB RAM\) |
+| 主处理器 | STM32F765  \(32 Bit Arm® Cortex®-M7, 216MHz, 2MB flash, 512KB RAM\) |
 | 协处理器 | STM32F100 \(32 Bit Arm® Cortex®-M3, 24MHz, 8KB SRAM\) |
 | **传感器** |  |
 | 加速计 | ICM-20602/ICM-20689/BMI055 |
@@ -49,7 +49,7 @@ PixHack V5采用了全新的V5 CORE平台；将飞控核心部分集成于V5 cor
 | GPS接口 | 1 |
 | Debug/F7 SWD接口 | 1 |
 | USB接口 | 1\(Type-C\) |
-| SPI接口 | 1 | 
+| SPI接口 | 1 |
 | **支持机型** |  |
 | PX4固件 | 固定翼/3-8旋翼/直升机/VTOL垂直起降/无人车/无人船等 |
 | **工作环境及物理参数** |  |
