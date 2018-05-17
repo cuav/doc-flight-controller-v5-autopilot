@@ -62,8 +62,8 @@ The PixHack V5 is similar to the pixhawk2.1 in terms of sensors. It also uses th
 | USB working voltage | 5V +- 0.25v |
 | Servo  Input | 0-36v |
 | Operating temperature | -40 ~ 85°c |
-| Size |  |
-|  | 89\*42.5\*33mm |
+| Dimensions and weight|  |
+| Dimensions | 89\*42.5\*33mm |
 | Weight | 90g |
 
 ### Interface definition {#Interface definition}
