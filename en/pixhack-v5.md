@@ -38,7 +38,7 @@ The PixHack V5 is similar to the pixhawk2.1 in terms of sensors. It also uses th
 | On-board Sensors | STM32F100 \(32 Bit Arm® Cortex®-M3, 24MHz, 8KB SRAM\) |
 | **Sensor** |  |
 | Accelerometer | ICM-20602/ICM-20689/BMI055 |
-| gyro | ICM-20602/ICM-20689/BMI055 |
+| Gyroscope | ICM-20602/ICM-20689/BMI055 |
 | compass | IST8310 |
 | Barometer | MS5611 |
 | **Interface ** |  |
