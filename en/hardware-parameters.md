@@ -12,7 +12,7 @@
 | Interfaces: |  |
 | UAR serial port | 5 |
 | I2c | 4 |
-| PWM outputs | 6 from IO, 8 from FMU |
+| PWM outputs | 14\(6 from IO, 8 from FMU\) |
 | R/C signal input protocol | PPM/SBUS/DSM/DSM2 |
 | RSSI input | PWM or 3. 3 analog voltage |
 | CAN Standard bus | 2 |
