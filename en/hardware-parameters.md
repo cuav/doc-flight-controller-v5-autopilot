@@ -2,15 +2,16 @@
 
 |  | **Hardware parameters** |
 | :--- | :--- |
-| Main FMU Processor | STM32F7653  \(32 Bit Arm® Cortex®-M7, 216MHz, 2MB flash, 512KB RAM\) |
-|  | STM32F100 \(32 Bit Arm® Cortex®-M3, 24MHz, 8KB SRAM\) |
+| Main FMU Processor | STM32F765  \(32 Bit Arm® Cortex®-M7, 216MHz, 2MB flash, 512KB RAM\) |
+| IO Processor | STM32F100 \(32 Bit Arm® Cortex®-M3, 24MHz, 8KB SRAM\) |
 | **On-board Sensors** |  |
-| Accel/Gyro | ICM-20602/ICM-20689/BMI055 |
-| Accel/Gyro | ICM-20602/ICM-20689/BMI055 |
+| Accel | ICM-20602/ICM-20689/BMI055 |
+| Gyro | ICM-20602/ICM-20689/BMI055 |
 | Magnetometer | IST8310 |
 | Barometer: | MS5611 |
 | Interfaces: |  |
-| UAR serial port | 5 |
+| UART | 3 |
+| UASRT | 2 |
 | I2c | 4 |
 | PWM outputs | 14\(6 from IO, 8 from FMU\) |
 | R/C signal input protocol | PPM/SBUS/DSM/DSM2 |
