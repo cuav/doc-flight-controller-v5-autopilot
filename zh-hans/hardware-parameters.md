@@ -10,7 +10,8 @@
 | 电子罗盘 | IST8310 |
 | 气压计 | MS5611 |
 | **接口** |  |
-| UASRT串口 | 5 |
+| UASRT串口 | 2 |
+| UART串口 | 3 |
 | I2C | 4 |
 | PWM输出 | 标准8 PWM IO+6个可编程IO |
 | 遥控器信号输入协议 | PPM/SBUS/DSM/DSM2 |
