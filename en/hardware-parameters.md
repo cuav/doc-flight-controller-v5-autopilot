@@ -11,7 +11,7 @@
 | Barometer: | MS5611 |
 | Interfaces: |  |
 | UAR serial port | 5 |
-| 2c | 4 |
+| I2c | 4 |
 | PWM outputs | 6 from IO, 8 from FMU |
 | R/C signal input protocol | PPM/SBUS/DSM/DSM2 |
 | RSSI input | PWM or 3. 3 analog voltage |
