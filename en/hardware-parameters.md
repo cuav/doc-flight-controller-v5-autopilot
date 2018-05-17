@@ -25,17 +25,15 @@
 | SPI interface | 1 |
 |  |  |
 | ** Support model ** |  |
-|PX4 firmwareFixed-wing  |  copter / QUADPlane / Rover/plane, etc. |
-| **Working environment and physical parameters **|  |
+| PX4 firmwareFixed-wing | copter / QUADPlane / Rover/plane, etc. |
+| **Working environment and physical parameters ** |  |
 | Power module output | 4.3~ 5.4 V |
 | USB Power Input | 5V +- 0.25v |
 | Servo Rail Input | 0-36v |
 | Operating temperature | -20 ~ 80°c |
 | **Dimensions** |  |
-| longwidehigh | 89\*42.5\*33mm |
+| long\*wide\*high | 89\*42.5\*33mm |
 | Weight | 90g |
-
-
 
 
 
