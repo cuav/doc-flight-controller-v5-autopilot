@@ -1,86 +1,98 @@
-## Summary
+# Pixhack v5
 
----
-
+*Pixhack v5*<sup>&reg;</sup> is an advanced autopilot designed and made in CUAV<sup>&reg;</sup> . 
+The board is  is based on the [Pixhawk-project](https://pixhawk.org/) **FMUv5** open hardware design. It runs PX4 on the [NuttX](http://nuttx.org) OS, and is fully compatible with both PX4 <sup>&reg;</sup>  firmware. intended primarily for academic and commercial develop.
 ![Pixhack v5](../assets/flight-controller/pixhack-v5/pixhack-v5.jpg)
+## Quick Summary
 
-### The new V5 CORE platform
+* Main FMU Processor: STM32F765
+  * 32 Bit Arm® Cortex®-M7, 216MHz, 2MB memory, 512KB RAM
+* IO Processor: STM32F100
+  * 32 Bit Arm® Cortex®-M3, 24MHz, 8KB SRAM
+* On-board sensors:
+  * Accelerometer/Gyroscope: ICM-20689
+  * Accelerometer/Gyroscope: BMI055
+  * Magnetometer: IST8310
+  * Barometer: MS5611
 
-PixHack V5 adopts the new V5 CORE platform; the core of the flight controller is integrated on the V5 core, and the bottom plate is detachable. It is only used as the external interface carrier to give consumers the space for customization. Users can design their own backplane according to their own needs.
+* Interfaces:
+  * 8-14 PWM outputs (6 from IO, 8 from FMU)
+  * 3 dedicated PWM/Capture inputs on FMU
+  * Dedicated R/C input for CPPM
+  * Dedicated R/C input for ppm/DSM and S.Bus 
+  * analog / PWM RSSI input
+  * S.Bus servo output
+  * 5 general purpose serial ports
+  * 4 I2C ports
+  * 4 SPI buses
+  * 2 CANBuses  with serial ESC
+  * Analog inputs for voltage / current of 2 batteries
+* Power System:
+  * Power: 4.3~5.4V
+  * USB Input: 4.75~5.25V
+  * Servo Rail Input: 0~36V
+* Weight and Dimensions:
+  * Weight: 90g
+  * Dimensions: 44x84x12mm
+* Other Characteristics:
+  * Operating temperature: -20 ~ 80°c（Measured value）
 
-### Faster processor
 
-In the hardware configuration, pixhack v5 abandoned the px4 family's original STM32F427 processor and chose a more advanced STM32F765 processor, its frequency up to 216MHZ and contains 2MB FLASH/512K RAM, higher frequency, greater RAM, Speed will be greatly improved.
+## Purchase
 
-### More stable sensors
+Order from [CUAV](https://cuav.taobao.com/index.htm?spm=2013.1.w5002-16371268426.2.411f26d9E18eAz).
+## connection{#connection}
 
-The PixHack V5 is similar to the pixhawk2.1 in terms of sensors. It also uses the third-degree redundant imu, but it chose a more stable ICM-20602/ICM-20689/BMI055/IST8310 sensor to improve its adaptability to different temperatures. .
-
-### In addition, V5 also has the following advantages:
-
-1, support RTK centimeter positioning;
-
-1. Modular design facilitates integration;
-
-3, built-in 3 sets of IMU redundancy;
-
-4, rich I / O port;
-
-5, metal housing built-in shock absorption;
-
-6, support for many rich models.
-
-## Hardware parameters {#Hardware parameters}
-
-| **Hardware parameters** |  |
-| :--- | :--- |
-| Mian FMU Procceor | STM32F765  \(32 Bit Arm® Cortex®-M7, 216MHz, 2MB flash, 512KB RAM\) |
-| On-board Sensors | STM32F100 \(32 Bit Arm® Cortex®-M3, 24MHz, 8KB SRAM\) |
-| **Sensor** |  |
-| Accelerometer | ICM-20602/ICM-20689/BMI055 |
-| Gyroscope | ICM-20602/ICM-20689/BMI055 |
-| compass | IST8310 |
-| Barometer | MS5611 |
-| **Interface ** |  |
-| UART | 3 |
-| UASRT | 3 |
-| i2c | 4 |
-| PWM Out put | 14\(Standard 8 pwm IO 6 programmable IO \) |
-| R/C signal input protocol | PPM/SBUS/DSM/DSM2 |
-| RSSI input | Pwm or 3. 3 analog voltage |
-| CAN standard bus | 2 |
-| Current voltage input | 2 |
-| Safety Switch | 1 |
-| GPS Interface | 1 |
-| Debug/F7 SWD Interface | 1 |
-| USB Interface | 1\(Type-C\) |
-| SPI Interface | 1 |
-| **Support model** |  |
-| Px4 firmware | copter / QuadPlane / Rover/plane, etc. |
-| ** Working environment and physical parameters ** |  |
-| PM working voltage | 4.5 ~ 5.5 V |
-| USB working voltage | 5V +- 0.25v |
-| Servo  Input | 0-36v |
-| Operating temperature | -40 ~ 85°c |
-| Dimensions and weight |  |
-| Dimensions | 89\*42.5\*33mm |
-| Weight | 90g |
-
-### Interface definition {#Interface definition}
 
 ![Pixhack v5](../assets/flight-controller/pixhack-v5/pixhack-v5-connectors.jpg)
 
-> Warning The RCIN interface is limited to powering the remote control and cannot be connected to any power/load.
+> **Warning**The RCIN interface is limited to powering the rc receiver and cannot be connected to any power/load.
 
-### Firmware compilation command {#Firmware compilation command}
+
+## Voltage Ratings
+
+*Pixhach v5* can be triple-redundant on the power supply if three power sources are supplied. The three power rails are: **POWER1**, **POWER2** and **USB**.
+
+> **Note** The output power rails **FMU PWM OUT** and **I/O PWM OUT** (0V to 36V) do not power the flight controller board (and are not powered by it). You must supply power to one of **POWER1**, **POWER2** or **USB** or the board will be unpowered. 
+
+**Normal Operation Maximum Ratings**
+
+Under these conditions all power sources will be used in this order to power the system:
+1. **POWER1** and **POWER2** inputs (4.3V to 5.4V)
+1. **USB** input (4.75V to 5.25V)
+
+## Building Firmware
 
 `make px4fmu-v5_default upload`
 
-### peripheral equipment {#Peripheral Equipment}
 
-* Airspeed sensor
-* Telemetry radio module
-* Rangefinder/Distance Sensor
+## Debug Port
+
+The system's serial console and SWD interface operate on the **FMU Debug** port. Simply connect the FTDI cable to the Debug & F7 SWD connector.
+To access the I/O Debug port, the user must remove the *Pixhack v5 shell.
+Both ports have standard serial pins and can be connected to a standard FTDI cable (3.3V, but 5V tolerant) or [Dronecode probe]. [Dronecode probe](https://kb.zubax.com/display/MAINKB/Dronecode+Probe+documentation). 
+## Peripherals
+
+* [Digital Airspeed Sensor](https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-16371268452.37.6d9f48afsFgGZI&id=9512463037)
+* [Telemetry Radio Modules](https://cuav.taobao.com/category-158480951.htm?spm=2013.1.w5002-16371268426.4.410b7a821qYbBq&search=y&catName=%CA%FD%B4%AB%B5%E7%CC%A8)
+* [Rangefinders/Distance sensors](https://docs.px4.io/en/sensor/rangefinders.html)
+
+
+## Supported Platforms / Airframes
+
+Any multicopter / airplane / rover or boat that can be controlled with normal RC servos or Futaba S-Bus servos. The complete set of supported configurations can be seen in the [Airframes Reference](../airframes/airframe_reference.md).
+
+
+
+## Further info
+- [FMUv5 reference design pinout](https://docs.google.com/spreadsheets/d/1-n0__BYDedQrc_2NHqBenG1DNepAgnHpSGglke-QQwY/edit#gid=912976165). 
+- [Pixhack v5 docs](http://doc.cuav.net/flight-controller/pixhack-v5/en/) 
+- [CUAV Github](https://github.com/cuav) 
+
+
+
+
+
 
 
 
