@@ -14,7 +14,9 @@ PixHack V5采用了全新的V5 CORE平台；将飞控核心部分集成于V5 cor
 
 ### 更稳定的传感器
 
-传感器方面PixHack V5与pixhawk2.1一样，同样采用三度冗余imu，但其选用了更为稳定的ICM-20602/ICM-20689/BMI055/IST8310等传感器，提高了其在不同温度下的适应能力。
+传感器方面PixHack V5与pixhack v3一样，采用三度冗余imu，但其选用了更为稳定的ICM-20602/ICM-20689/BMI055/IST8310等传感器，提高了其在不同温度下的适应能力。
+
+
 
 ### 除此之外，V5还具有以下优势：
 
@@ -71,10 +73,10 @@ PixHack V5采用了全新的V5 CORE平台；将飞控核心部分集成于V5 cor
 `make px4fmu-v5_default upload`
 
 ### 外围设备 {#外围设备}
+
 * [空速计传感器](http://doc.cuav.net/tutorial/plane/optional-hardware/airspeed.html)
 * [遥测无线电模块](http://doc.cuav.net/tutorial/plane/optional-hardware/radio.html)
 * [测距仪/距离传感器 ](http://doc.cuav.net/tutorial/copter/optional-hardware/rangefinders/rangefinders.html)
-
 
 
 

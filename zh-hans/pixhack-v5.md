@@ -4,6 +4,10 @@
 
 ![Pixhack v5](../assets/flight-controller/pixhack-v5/pixhack-v5.jpg)
 
+### 全新的开源硬件设计
+
+Pixhack v5是CUAV基于[FMU V5](https://docs.px4.io/en/peripherals/rtk_gps_hex_hereplus.html#wiring-and-connections)开源硬件全新打造的高性能飞行控制系统。[FMU v5](https://docs.px4.io/en/peripherals/rtk_gps_hex_hereplus.html#wiring-and-connections)开源硬件的特点就是采用比FMU V3更加先进的处理器，更大的flash及RAM.
+
 ### 全新的V5 CORE 平台
 
 PixHack V5采用了全新的V5 CORE平台；将飞控核心部分集成于V5 core上，底板可拆卸，只作为对外接口载体，给予消费者定制化的空间，用户可根据自身需求自行设计自己的底板。
@@ -15,6 +19,8 @@ PixHack V5采用了全新的V5 CORE平台；将飞控核心部分集成于V5 cor
 ### 更稳定的传感器
 
 传感器方面PixHack V5与pixhawk2.1一样，同样采用三度冗余imu，但其选用了更为稳定的ICM-20602/ICM-20689/BMI055/IST8310等传感器，提高了其在不同温度下的适应能力。
+
+
 
 ### 除此之外，V5还具有以下优势：
 
