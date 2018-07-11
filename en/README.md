@@ -45,10 +45,8 @@ Order from [CUAV](https://cuav.taobao.com/index.htm?spm=2013.1.w5002-16371268426
 ## connection{#connection}
 
 ![V5 AutoPilot](../assets/flight-controller/v5-autopilot/v5-pinouts.jpg)
-
+DSU7 is a new interface for CUAV naming, including FMU SWD and UART7 interfaces. When V5 runs PX4 firmware, UART7 is used as the DEBUG interface; when running ArduPilot firmware, UART7 is used as the communication serial port and usb is used to debug the output.
 > **Warning**The RCIN interface is limited to powering the rc receiver and cannot be connected to any power/load.
-
-
 ## Voltage Ratings
 
 *V5 AutoPilot* can be triple-redundant on the power supply if three power sources are supplied. The three power rails are: **POWER1**, **POWER2** and **USB**.
@@ -72,7 +70,7 @@ Under these conditions all power sources will be used in this order to power the
 
 The system's serial console and SWD interface operate on the **FMU Debug** port. Simply connect the FTDI cable to the Debug & F7 SWD connector.
 To access the I/O Debug port, the user must remove the V5-AutoPilot shell.
-Both ports have standard serial pins and can be connected to a standard FTDI cable (3.3V, but 5V tolerant) or [Dronecode probe]. [Dronecode probe](https://kb.zubax.com/display/MAINKB/Dronecode+Probe+documentation). 
+Both ports have standard serial pins and can be connected to a standard FTDI cable (3.3V, but 5V tolerant). 
 ## Peripherals
 
 * [Digital Airspeed Sensor](https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-16371268452.37.6d9f48afsFgGZI&id=9512463037)
