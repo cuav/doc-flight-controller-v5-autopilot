@@ -10,8 +10,7 @@
 | Magnetometer | IST8310 |
 | Barometer | MS5611 |
 | **Interfaces** |  |
-| UART | 3 |
-| UASRT | 2 |
+| UART | 5 |
 | I2c | 4 |
 | PWM outputs | 14\(6 from IO, 8 from FMU\) |
 | R/C signal input protocol | PPM/SBUS/DSM/DSM2 |
