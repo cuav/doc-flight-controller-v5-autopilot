@@ -10,7 +10,7 @@ V5 AutoPilot采用了全新的V5 CORE平台；将飞控核心部分集成于V5 c
 
 ### 全新的开源硬件设计
 
-V5 AutoPilot是CUAV基于[FMU V5](https://docs.px4.io/en/peripherals/rtk_gps_hex_hereplus.html#wiring-and-connections)开源硬件全新打造的高性能飞行控制系统。[FMU v5](https://docs.px4.io/en/peripherals/rtk_gps_hex_hereplus.html#wiring-and-connections)开源硬件的特点就是采用比FMU V3更加先进的处理器、更大的flash及RAM、更稳定可靠的传感器。
+V5 AutoPilot是CUAV基于[FMU V5](https://docs.px4.io/en/flight_controller/pixhawk_series.html)开源硬件全新打造的高性能飞行控制系统。[FMU v5](https://docs.px4.io/en/flight_controller/pixhawk_series.html)开源硬件的特点就是采用比FMU V3更加先进的处理器、更大的flash及RAM、更稳定可靠的传感器。
 
 ### 更快的处理器
 
@@ -70,10 +70,12 @@ V5 AutoPilot是CUAV基于[FMU V5](https://docs.px4.io/en/peripherals/rtk_gps_hex
 
 > **Warning** RCIN接口只限于给遥控器供电，不可接入任何电源/负载.
 
-### 固件编译命令 {#编译命令}
+### PX4固件编译命令 {#编译命令}
 
 `make px4fmu-v5_default upload`
-
+### ArduPilot固件编译命令 {#编译命令}
+`./waf configure --board fmuv5 `
+`./waf copter --upload`
 ### 外围设备 {#外围设备}
 
 * 空速计传感器
