@@ -67,7 +67,7 @@ V5 AutoPilot是CUAV基于[FMU V5](https://docs.px4.io/en/flight_controller/pixha
 ### 接口定义 {#接口定义}
 
 ![V5 AutoPilot](../assets/flight-controller/v5-autopilot/v5-pinouts.jpg)
-DSU7为CUAV全新命名接口，其包含FMU SWD和UART7接口，其中当V5运行PX4固件时UART7作为DEBUG接口，运行ArduPilot固件时UART7作为通信串行口。
+DSU7为CUAV全新命名接口，其包含FMU SWD和UART7接口，其中当V5运行PX4固件时UART7作为DEBUG接口；运行ArduPilot固件时UART7作为通信串行口，USB接口则为DEBUG接口。
 > **Warning** RCIN接口只限于给遥控器供电，不可接入任何电源/负载.
 
 ### PX4固件编译命令 {#编译命令}
