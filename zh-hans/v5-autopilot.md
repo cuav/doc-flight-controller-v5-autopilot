@@ -2,7 +2,7 @@
 
 ---
 
-![Pixhack v5](../assets/flight-controller/pixhack-v5/pixhack-v5.jpg)
+![Pixhack v5](../assets/flight-controller/v5-autopilot/pixhack-v5.jpg)
 
 ### 全新的V5 CORE 平台
 
@@ -66,7 +66,7 @@ V5 AutoPilot是CUAV基于[FMU V5](https://docs.px4.io/en/peripherals/rtk_gps_hex
 
 ### 接口定义 {#接口定义}
 
-![Pixhack v5](../assets/flight-controller/pixhack-v5/pixhack-v5-connectors.jpg)
+![V5 AutoPilot](../assets/flight-controller/v5-autopilot/v5-pinouts.jpg)
 
 > **Warning** RCIN接口只限于给遥控器供电，不可接入任何电源/负载.
 
