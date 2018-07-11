@@ -1,8 +1,9 @@
 # Pixhack v5
 
-*Pixhack v5*<sup>&reg;</sup> is an advanced autopilot designed and made in CUAV<sup>&reg;</sup> . 
+*V5 AutoPilot*<sup>&reg;</sup> is an advanced autopilot designed and made in CUAV<sup>&reg;</sup> .
 The board is  is based on the **FMUv5** open hardware design. It is fully compatible with both [PX4](http://px4-travis.s3.amazonaws.com/Firmware/master/px4fmu-v5_default.px4) and [ArduPilot](http://firmware.ardupilot.org)  firmware. intended primarily for academic and commercial develop.
-![Pixhack v5](../assets/flight-controller/pixhack-v5/pixhack-v5.jpg)
+![Pixhack v5](../assets/flight-controller/v5-autopilot/pixhack-v5.jpg)
+ 
 ## Quick Summary
 
 * Main FMU Processor: STM32F765
@@ -43,15 +44,14 @@ The board is  is based on the **FMUv5** open hardware design. It is fully compat
 Order from [CUAV](https://cuav.taobao.com/index.htm?spm=2013.1.w5002-16371268426.2.411f26d9E18eAz).
 ## connection{#connection}
 
-
-![Pixhack v5](../assets/flight-controller/pixhack-v5/pixhack-v5-connectors.jpg)
+![V5 AutoPilot](../assets/flight-controller/v5-autopilot/v5-pinouts.jpg)
 
 > **Warning**The RCIN interface is limited to powering the rc receiver and cannot be connected to any power/load.
 
 
 ## Voltage Ratings
 
-*Pixhach v5* can be triple-redundant on the power supply if three power sources are supplied. The three power rails are: **POWER1**, **POWER2** and **USB**.
+*V5 AutoPilot* can be triple-redundant on the power supply if three power sources are supplied. The three power rails are: **POWER1**, **POWER2** and **USB**.
 
 > **Note** The output power rails **FMU PWM OUT** and **I/O PWM OUT** (0V to 36V) do not power the flight controller board (and are not powered by it). You must supply power to one of **POWER1**, **POWER2** or **USB** or the board will be unpowered. 
 
@@ -61,15 +61,17 @@ Under these conditions all power sources will be used in this order to power the
 1. **POWER1** and **POWER2** inputs (4.3V to 5.4V)
 1. **USB** input (4.75V to 5.25V)
 
-## Building Firmware
+## Building PX4 Firmware
 
 `make px4fmu-v5_default upload`
-
+###Building ArduPilotFirmware {#编译命令}
+`./waf configure --board fmuv5 `
+`./waf copter --upload`
 
 ## Debug Port
 
 The system's serial console and SWD interface operate on the **FMU Debug** port. Simply connect the FTDI cable to the Debug & F7 SWD connector.
-To access the I/O Debug port, the user must remove the *Pixhack v5 shell.
+To access the I/O Debug port, the user must remove the V5-AutoPilot shell.
 Both ports have standard serial pins and can be connected to a standard FTDI cable (3.3V, but 5V tolerant) or [Dronecode probe]. [Dronecode probe](https://kb.zubax.com/display/MAINKB/Dronecode+Probe+documentation). 
 ## Peripherals
 
@@ -86,8 +88,16 @@ Any multicopter / airplane / rover or boat that can be controlled with normal RC
 
 ## Further info
 - [FMUv5 reference design pinout](https://docs.google.com/spreadsheets/d/1-n0__BYDedQrc_2NHqBenG1DNepAgnHpSGglke-QQwY/edit#gid=912976165). 
-- [Pixhack v5 docs](http://doc.cuav.net/flight-controller/pixhack-v5/en/) 
+- [V5 AutoPilot docs](http://doc.cuav.net/flight-controller/v5-autopilot/en/) 
 - [CUAV Github](https://github.com/cuav) 
+
+
+
+
+
+
+
+
 
 
 
