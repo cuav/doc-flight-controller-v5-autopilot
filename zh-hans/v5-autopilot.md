@@ -14,11 +14,11 @@ V5 AutoPilot是CUAV基于[FMU V5](https://docs.px4.io/en/peripherals/rtk_gps_hex
 
 ### 更快的处理器
 
-在硬件配置上，PixHack v5抛弃了px4家族原有的STM32F427处理器而选用了更为高级的STM32F765处理器，其主频高达216MHZ并且含有2MB FLASH/512K RAM，主频更高，RAM更大，速度将实现大幅度提升。
+在硬件配置上，V5 AutoPilot抛弃了px4家族原有的STM32F427处理器而选用了更为高级的STM32F765处理器，其主频高达216MHZ并且含有2MB FLASH/512K RAM，主频更高，RAM更大，速度将实现大幅度提升。
 
 ### 更稳定的传感器
 
-传感器方面PixHack V5与pixhawk2.1一样，同样采用三度冗余imu，但其选用了更为稳定的ICM-20602/ICM-20689/BMI055/IST8310等传感器，提高了其在不同温度下的适应能力。
+传感器方面V5 AutoPilot与pixhawk3一样，同样采用三度冗余imu，但其选用了更为稳定的ICM-20602/ICM-20689/BMI055/IST8310等传感器，提高了其在不同温度下的适应能力。
 
 ### 除此之外，V5还具有以下优势：
 
