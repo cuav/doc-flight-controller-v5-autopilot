@@ -1,6 +1,6 @@
 # Table of content
 
-* [PIXHACK V5 Autopilot](README.md)
+* [V5 Autopilot](README.md)
 * [Hardware Parameters](hardware-parameters.md)
 * [Interface Definition](connection.md)
 * [Compile Command](building-firmware.md)
