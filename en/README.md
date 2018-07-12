@@ -47,6 +47,7 @@ Order from [CUAV](https://cuav.taobao.com/index.htm?spm=2013.1.w5002-16371268426
 ![V5 AutoPilot](../assets/flight-controller/v5-autopilot/v5-pinouts.jpg)
 DSU7 is a new interface for cuav naming, including fmu swd and uart7 interfaces. When V5 runs PX4 firmware,uart7 is used as the DEBUG interface; when running ArduPilot firmware; uart7 is used as the communication serial port and usb is used to debug the output.
 > **Warning**The RCIN interface is limited to powering the rc receiver and cannot be connected to any power/load.
+
 ## Voltage Ratings
 
 *V5 AutoPilot* can be triple-redundant on the power supply if three power sources are supplied. The three power rails are: **POWER1**, **POWER2** and **USB**.
