@@ -63,7 +63,7 @@ Under these conditions all power sources will be used in this order to power the
 ## Building PX4 Firmware
 
 `make px4fmu-v5_default upload`
-###Building ArduPilotFirmware {#编译命令}
+###Building ArduPilot Firmware {#编译命令}
 `./waf configure --board fmuv5 `
 `./waf copter --upload`
 
