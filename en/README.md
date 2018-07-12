@@ -2,8 +2,8 @@
 
 *V5 AutoPilot*<sup>&reg;</sup> is an advanced autopilot designed and made in CUAV<sup>&reg;</sup> .
 The board is  is based on the **FMUv5** open hardware design. It is fully compatible with both [PX4](http://px4-travis.s3.amazonaws.com/Firmware/master/px4fmu-v5_default.px4) and [ArduPilot](http://firmware.ardupilot.org)  firmware. intended primarily for academic and commercial develop.
-![Pixhack v5](../assets/flight-controller/v5-autopilot/pixhack-v5.jpg)
- 
+![V5 AutoPilot](../assets/flight-controller/v5-autopilot/v5-autopilot.png)
+
 ## Quick Summary
 
 * Main FMU Processor: STM32F765
