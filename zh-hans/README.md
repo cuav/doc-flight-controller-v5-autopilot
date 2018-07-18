@@ -1,7 +1,7 @@
 # 概述 {#概述}
 
 ---
-![V5 AutoPilot](../assets/flight-controller/v5-autopilot/v5-autopilot.png)
+![V5 AutoPilot](../assets/flight-controller/v5-autopilot/v5-autopilot.jpg)
 
 ### 全新的V5 CORE 平台
 
