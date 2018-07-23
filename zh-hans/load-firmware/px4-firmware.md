@@ -10,7 +10,7 @@ V5 AutoPilot支持PX4原生固件及ArduPilot,下面主要讲解如何加载这�
 
 ##### 在线烧录：
 
-##### PX4原生固件在线烧录固件需要先安装[QGoundcontrol](http://qgroundcontrol.com/)地面站,打开地面站》点击设置图标》点击firmware ![](/assets/load-px4-firmware.jpg)将V5 AutoPilot通过usb线连接到电脑，地面站右边将弹出下图窗口》选择需要PX4 Flight STACK》OK![](/assets/load-px4-firmware2.jpg)加载完成，如不进行操作，十几秒后将自动连接。![](/assets/load-px4-firmware3.jpg)![](/assets/load-px4-firmware4.JPG)
+PX4原生固件在线烧录固件需要先安装[QGoundcontrol](http://qgroundcontrol.com/)地面站,打开地面站》点击设置图标》点击firmware ![](/assets/load-px4-firmware.jpg)将V5 AutoPilot通过usb线连接到电脑，地面站右边将弹出下图窗口》选择需要PX4 Flight STACK》OK![](/assets/load-px4-firmware2.jpg)加载完成，如不进行操作，十几秒后将自动连接。![](/assets/load-px4-firmware3.jpg)![](/assets/load-px4-firmware4.JPG)
 
 ---
 
