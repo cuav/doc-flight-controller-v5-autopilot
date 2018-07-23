@@ -5,6 +5,11 @@
 * [接口定义](connection.md)
 * [编译命令](building-firmware.md)
 * [外围硬件](peripherals.md)
+* [加载固件](Load—firmware.md)
+
+
+
+
 
 
 
