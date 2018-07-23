@@ -6,7 +6,7 @@
 * [编译命令](building-firmware.md)
 * [外围硬件](peripherals.md)
 * [加载固件](javascript:;)
-  * [ArduPilot固件](ardupilot-firmware.md)
+  * [ArduPilot固件](load-firmware/ardupilot-firmware.md)
   * [PX4原生固件](load-firmware/px4-firmware.md)
 
 
