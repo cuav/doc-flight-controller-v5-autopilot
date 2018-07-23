@@ -7,7 +7,7 @@
 * [外围硬件](peripherals.md)
 * [加载固件](javascript:;)
   * [ArduPilot固件](ardupilot-firmware.md)
-  * [PX4原生固件](px4-firmware.md)
+  * [PX4原生固件](load-firmware/px4-firmware.md)
 
 
 
