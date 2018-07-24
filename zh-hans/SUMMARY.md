@@ -8,32 +8,7 @@
 * [加载固件](javascript:;)
   * [ArduPilot固件](load-firmware/ardupilot-firmware.md)
   * [PX4原生固件](load-firmware/px4-firmware.md)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* [Pre-arm报错信息分析](pre-arm.md)
 
 
 
