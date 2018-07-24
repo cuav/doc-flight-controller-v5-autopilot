@@ -18,7 +18,7 @@ V5 AutoPilot是CUAV基于[FMU V5](https://docs.px4.io/en/flight_controller/pixha
 
 ### 更稳定的传感器
 
-传感器方面V5 AutoPilot与pixhawk3一样，同样采用三度冗余imu，但其选用了更为稳定的ICM-20602/ICM-20689/BMI055/IST8310等传感器，提高了其在不同温度下的适应能力。
+传感器方面V5 AutoPilot与pixhack v3一样，同样采用三度冗余imu，但其选用了更为稳定的ICM-20602/ICM-20689/BMI055/IST8310等传感器，提高了其在不同温度下的适应能力。
 
 ### 除此之外，V5还具有以下优势：
 
