@@ -230,6 +230,12 @@ ACRO\_BAL\_ROLL参数高于自稳 roll的P值和/或ACRO\_BAL\_PITCH参数高于
 ### RC\*  minimum is greater than trim\(遥控信号输入通道\*最小值大于trim值）
 
 该检测为AC3.6以上固件新添加的检测，是为了更多用户了解到rc10~rc16通道是可用的。如果在遥控器校准界面没有校准这些通道就会报错，如果您的遥控器接收机不支持那么多通道，请在全部参数表找到rc*_trim参数（*为通道号），并把它设置成rc*_max与rc*_min之间的任意值。
+###Hardware safety switch(没有安全开关硬件）
+该错误提示实际并非字面意思，这可能是您已经连接了安全开关但没解锁安全开关或者您没有安装安全开关且没有禁用安全开关。
+解决办法：
+长按安全开关至指示灯常亮。
+或者[禁用安全开关](http://doc.cuav.net/tutorial/copter/optional-hardware/buzzer.html)
+
 
 
 
