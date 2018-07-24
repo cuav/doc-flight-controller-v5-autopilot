@@ -1,6 +1,7 @@
 # 概述 {#概述}
 
 ---
+
 ![V5 AutoPilot](../assets/flight-controller/v5-autopilot/v5-autopilot.jpg)
 
 ### 全新的V5 CORE 平台
@@ -66,22 +67,24 @@ V5 AutoPilot是CUAV基于[FMU V5](https://docs.px4.io/en/flight_controller/pixha
 ### 接口定义 {#接口定义}
 
 ![V5 pinouts](../assets/flight-controller/v5-autopilot/v5-pinouts.jpg)
+
 > **Comment** DUS 7为cuav全新命名的接口，其包含FMU SWD接口及UART7，其中当V5运行PX4固件时UART7作为DEBUG接口，当V5运行ArduPilot固件UART7作为通用串行口。RCIN接口只限于给遥控器供电，不可接入任何电源/负载.
 
 ### PX4固件编译命令 {#编译命令}
 
 `make px4fmu-v5_default upload`
+
 ### ArduPilot固件编译命令 {#编译命令}
-`./waf configure --board fmuv5 `
+
+`./waf configure --board fmuv5`  
 `./waf copter --upload`
+
 ### 外围设备 {#外围设备}
 
 * [空速计传感器](http://doc.cuav.net/tutorial/plane/optional-hardware/airspeed.html)
 * [遥测无线电模块](http://doc.cuav.net/tutorial/plane/optional-hardware/radio.html)
 * [测距仪/距离传感器 ](http://doc.cuav.net/tutorial/copter/optional-hardware/rangefinders/rangefinders.html)
-
-
-
+* 更多可选硬件信息请访问[多旋翼可选硬件](http://preview.cuav.net/tutorial/copter/)/[固定翼可选硬件](http://preview.cuav.net/tutorial/plane/zh-hans/)界面
 
 
 
