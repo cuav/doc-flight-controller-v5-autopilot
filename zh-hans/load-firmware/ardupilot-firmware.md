@@ -4,7 +4,7 @@
 
 V5 AutoPilot支持ArduPilot,下面主要讲解如何加载这种固件。
 
-ArduPilot团队对FMU V5硬件接触较晚，现支持V5 AutoPilot的固件尚处于测试版阶段，但已经经过了数次的优化及广大模友的测试，已经可以正常使用。
+ArduPilot团队对FMU V5硬件接触较晚，现支持V5 AutoPilot的固件尚处于测试版阶段，但已经经过了数次的优化及广大模友的无数次测试，已经可以正常使用。
 
 使用ArduPilot固件前请将[mission planner](http://firmware.ardupilot.org/Tools/MissionPlanner/)升级到1.3.57及以上版本地面站。
 
