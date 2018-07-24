@@ -11,7 +11,7 @@ ArduPilot团队对FMU V5硬件接触较晚，现支持V5 AutoPilot的固件尚�
 ### 在线烧录固件：
 
 将飞控接入到电脑，打开地面站，点击初始设置界面》安装固件》点击测试版固件》选择您需要的固件类型》等待烧录完成  
-![ardupilot firmware](/assets/load-ardupilot-firmware.JPG)
+![ardupilot firmware](../../assets/load-ardupilot-firmware.JPG)
 
 ### 本地烧录固件：
 
@@ -22,5 +22,5 @@ ArduPilot团队对FMU V5硬件接触较晚，现支持V5 AutoPilot的固件尚�
 [无人车](http://firmware.ardupilot.org/Rover/latest/CUAVv5/ardurover.apj)  
 [无人船](http://firmware.ardupilot.org/Sub/latest/CUAVv5/ardusub.apj)
 选择加载自定义固件》选择下载的固件》等待烧录完成
-![ardupilot firmware2](/assets/load-ardupilot-firmware2.JPG)
+![ardupilot firmware2](../../assets/load-ardupilot-firmware2.JPG)
 
