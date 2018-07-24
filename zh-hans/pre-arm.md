@@ -239,3 +239,7 @@ ACRO\_BAL\_ROLL参数高于自稳 roll的P值和/或ACRO\_BAL\_PITCH参数高于
 长按安全开关至指示灯常亮。  
 或者[禁用安全开关](http://doc.cuav.net/tutorial/copter/optional-hardware/buzzer.html)
 
+
+
+
+
