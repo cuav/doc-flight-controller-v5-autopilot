@@ -5,10 +5,17 @@
 * [接口定义](connection.md)
 * [编译命令](building-firmware.md)
 * [外围硬件](peripherals.md)
+* [安装驱动](install-driver.md)
 * [加载固件](javascript:;)
   * [ArduPilot固件](load-firmware/ardupilot-firmware.md)
   * [PX4原生固件](load-firmware/px4-firmware.md)
 * [Pre-arm报错信息分析](pre-arm.md)
+
+
+
+
+
+
 
 
 
