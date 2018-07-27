@@ -11,5 +11,3 @@ V5 AutoPilot windows的驱动程序由微软官方提供。在window10系统下�
 ![v5_driver2](../assets/v5_driver2.jpg)
 ![v5_driver3](../assets/v5_driver3.jpg)
 等待安装完成。
-
-
