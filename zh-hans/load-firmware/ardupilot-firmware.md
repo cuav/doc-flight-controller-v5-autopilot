@@ -16,11 +16,11 @@ ArduPilot团队对FMU V5硬件接触较晚，现支持V5 AutoPilot的固件尚�
 ### 本地烧录固件：
 
 请先下载您需要的固件类型：  
-[多旋翼\(3~8轴通用）](http://firmware.ardupilot.org/Copter/latest/CUAVv5/arducopter.apj)  
-[传统直升机](http://firmware.ardupilot.org/Copter/latest/CUAVv5-heli/arducopter-heli.apj)  
-[固定翼](http://firmware.ardupilot.org/Plane/latest/CUAVv5/arduplane.apj)（包含垂直起降机固件）  
-[无人车](http://firmware.ardupilot.org/Rover/latest/CUAVv5/ardurover.apj)  
-[无人船](http://firmware.ardupilot.org/Sub/latest/CUAVv5/ardusub.apj)
+[多旋翼\(3~8轴通用）](http://firmware.ardupilot.org/Copter/stable/CUAVv5/arducopter.apj)  
+[传统直升机](http://firmware.ardupilot.org/Copter/stable/CUAVv5-heli/arducopter-heli.apj)  
+[固定翼](http://firmware.ardupilot.org/Plane/stable/CUAVv5/arduplane.apj)（包含垂直起降机固件）  
+[无人车](http://firmware.ardupilot.org/Rover/stable/CUAVv5/ardurover.apj)  
+[无人船](http://firmware.ardupilot.org/Sub/stable/CUAVv5/ardusub.apj)
 选择加载自定义固件》选择下载的固件》等待烧录完成
 ![ardupilot firmware2](../../assets/load-ardupilot-firmware2.JPG)
 
