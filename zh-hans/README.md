@@ -85,6 +85,7 @@ V5 AutoPilot是CUAV基于[FMU V5](https://docs.px4.io/en/flight_controller/pixha
 * [遥测无线电模块](http://doc.cuav.net/tutorial/plane/optional-hardware/radio.html)
 * [测距仪/距离传感器 ](http://doc.cuav.net/tutorial/copter/optional-hardware/rangefinders/rangefinders.html)
 * 更多可选硬件信息请访问[多旋翼可选硬件](http://preview.cuav.net/tutorial/copter/)/[固定翼可选硬件](http://preview.cuav.net/tutorial/plane/zh-hans/)界面
+{%youtube%}https://www.youtube.com/watch?v=YeYq6qVBz4E{%endyoutube%}
 
 
 
