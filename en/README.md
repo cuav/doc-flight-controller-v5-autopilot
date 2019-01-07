@@ -89,6 +89,10 @@ Any multicopter / airplane / rover or boat that can be controlled with normal RC
 - [FMUv5 reference design pinout](https://docs.google.com/spreadsheets/d/1-n0__BYDedQrc_2NHqBenG1DNepAgnHpSGglke-QQwY/edit#gid=912976165). 
 - [V5 AutoPilot docs](http://doc.cuav.net/flight-controller/v5-autopilot/en/) 
 - [CUAV Github](https://github.com/cuav) 
+{%youtube%}https://www.youtube.com/watch?v=YeYq6qVBz4E{%endyoutube%}
+
+
+
 
 
 
