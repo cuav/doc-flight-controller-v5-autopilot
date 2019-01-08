@@ -1,7 +1,7 @@
 # 概述 {#概述}
 
 ---
-
+> **NOTE** 如显示不清晰，请点击右键另存为下载到本地查看。
 ![V5 AutoPilot](../assets/flight-controller/v5-autopilot/v5-autopilot.jpg)
 
 ### 全新的V5 CORE 平台
