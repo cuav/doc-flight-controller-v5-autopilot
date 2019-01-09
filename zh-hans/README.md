@@ -75,7 +75,7 @@ V5 AutoPilot是CUAV基于[FMU V5](https://docs.px4.io/en/flight_controller/pixha
 
 ### ArduPilot固件编译命令 {#编译命令}
 
-`./waf configure --board fmuv5`  
+`./waf configure --board CUAVv5`  
 `./waf copter --upload`
 
 ### 外围设备 {#外围设备}
