@@ -20,7 +20,7 @@ The board is  is based on the **FMUv5** open hardware design. It is fully compat
   * 8-14 PWM outputs (6 from IO, 8 from FMU)
   * 3 dedicated PWM/Capture inputs on FMU
   * Dedicated R/C input for CPPM
-  * Dedicated R/C input for ppm/DSM and S.Bus 
+  * Dedicated R/C input for PPM and S.Bus 
   * analog / PWM RSSI input
   * S.Bus servo output
   * 5 general purpose serial ports
