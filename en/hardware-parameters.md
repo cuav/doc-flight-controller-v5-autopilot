@@ -13,7 +13,7 @@
 | UART | 5 |
 | I2c | 4 |
 | PWM outputs | 14\(6 from IO, 8 from FMU\) |
-| R/C signal input protocol | PPM/SBUS/DSM/DSM2 |
+| R/C signal input protocol | PPM/SBUS/|
 | RSSI input | PWM or 3. 3 analog voltage |
 | CAN Standard bus | 2 |
 | Analog inputs for voltage | 2 |
