@@ -38,10 +38,10 @@ The board is  is based on the **FMUv5** open hardware design. It is fully compat
 * Other Characteristics:
   * Operating temperature: -20 ~ 80°c（Measured value）
 
-
 ## Purchase
 
 Order from [CUAV](https://cuav.taobao.com/index.htm?spm=2013.1.w5002-16371268426.2.411f26d9E18eAz).
+
 ## connection{#connection}
 
 ![V5 AutoPilot](../assets/flight-controller/v5-autopilot/v5-pinouts.jpg)
