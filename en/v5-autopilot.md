@@ -60,10 +60,11 @@ Under these conditions all power sources will be used in this order to power the
 1. **POWER1** and **POWER2** inputs (4.3V to 5.4V)
 1. **USB** input (4.75V to 5.25V)
 
-## Building PX4 Firmware
+## Building PX4 Firmware {#building-firmware}
+
 
 `make px4fmu-v5_default upload`
-###Building ArduPilot Firmware {#编译命令}
+###Building ArduPilot Firmware 
 `./waf configure --board fmuv5 `
 `./waf copter --upload`
 
