@@ -2,7 +2,7 @@
 
 * [V5 series autopilot](README.md)
 * [V5 autopilot](v5.md)
-* [Interface Definition](connection.md)
+* [Interface Definition](V5.md#connection)
 * [Compile Command](building-firmware.md)
 * [Peripheral Hardware](peripherals.md)
 
