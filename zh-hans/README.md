@@ -44,7 +44,7 @@ V5 AutoPilot是CUAV基于[FMU V5](https://docs.px4.io/en/flight_controller/pixha
 | UART串口 | 5 |
 | I2C | 4 |
 | PWM输出 | 标准8 PWM IO+6个可编程IO |
-| 遥控器信号输入协议 | PPM/SBUS/DSM/DSM2 |
+| 遥控器信号输入协议 | PPM/SBUS|
 | RSSI输入 | PWM或3.3模拟电压 |
 | CAN标准总线 | 2 |
 | 电流电压输入 | 2 |
