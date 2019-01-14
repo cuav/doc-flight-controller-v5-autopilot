@@ -1,7 +1,7 @@
 # Table of content
 
 * [V5 series autopilot](README.md)
-* [Hardware Parameters](hardware-parameters.md)
+* [V5 autopilot](V5.md)
 * [Interface Definition](connection.md)
 * [Compile Command](building-firmware.md)
 * [Peripheral Hardware](peripherals.md)
