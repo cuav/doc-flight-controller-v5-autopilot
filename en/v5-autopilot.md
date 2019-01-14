@@ -81,7 +81,6 @@ Both ports have standard serial pins and can be connected to a standard FTDI cab
 * [Telemetry Radio Modules](https://cuav.taobao.com/category-158480951.htm?spm=2013.1.w5002-16371268426.4.410b7a821qYbBq&search=y&catName=%CA%FD%B4%AB%B5%E7%CC%A8)
 * [Rangefinders/Distance sensors](https://docs.px4.io/en/sensor/rangefinders.html)
 
-
 ## Supported Platforms / Airframes
 
 Any multicopter / airplane / rover or boat that can be controlled with normal RC servos or Futaba S-Bus servos. The complete set of supported configurations can be seen in the [Airframes Reference](../airframes/airframe_reference.md).
