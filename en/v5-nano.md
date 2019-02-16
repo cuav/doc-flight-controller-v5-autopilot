@@ -4,12 +4,40 @@ The V5-NANO autopilot<sup>&reg;</sup> is designed for businesses and enthusiasts
 
 V5- NANO was designed by CUAV<sup>&reg;</sup> and Auterion<sup>&reg;</sup>, the PX4 team and the ArduPilot team jointly developed, It is based on the Pixhawk **FMUv5** design standard and is optimized to run [PX4](http://px4-travis.s3.amazonaws.com/Firmware/master/px4fmu-v5_default.px4) firmware and [ArduPilot](http://firmware.ardupilot.org) firmware.
 
+### Quick Summary
+Main FMU Processor: STM32F765◦32 Bit Arm® Cortex®-M7, 216MHz, 2MB memory, 512KB RAM
+
+* On-board sensors:
+* Accel/Gyro: ICM-20689
+* Accel/Gyro: ICM-20602
+* Accel/Gyro: BMI055
+* Magnetometer: IST8310
+* Barometer: MS5611
+
+* Interfaces: 8 PWM outputs
+* 4 dedicated PWM/Capture inputs on FMU
+* Dedicated R/C input for CPPM
+*Dedicated R/C input for Spektrum / DSM and S.Bus with analog / PWM RSSI input
+* 3 general purpose serial ports
+* 2 I2C ports
+* 3 SPI buses
+* 1 CANBuses for CAN ESC
+* Analog inputs for voltage / current of battery
+* 2 additional analog input
+
+* Power System:◦Power Brick Input: 4.75~5.5V
+* USB Power Input: 4.75~5.25V
+* Servo Rail Input: 0~24V
+* Max current sensing: 120A
+
+•Weight and Dimensions:◦Dimensions: 38x55x15.5mm
+
+•Other Characteristics:◦Operating temperature: -40 ~ 85°c
 ## Quick Summary
 
 * Main FMU Processor: STM32F765
   * 32 Bit Arm® Cortex®-M7, 216MHz, 2MB memory, 512KB RAM
-* IO Processor: STM32F100
-  * 32 Bit Arm® Cortex®-M3, 24MHz, 8KB SRAM
+
 * On-board sensors:
   * Accelerometer/Gyroscope: ICM-20689
   * Accelerometer/Gyroscope: BMI055
