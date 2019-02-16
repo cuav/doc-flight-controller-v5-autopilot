@@ -33,47 +33,13 @@ Main FMU Processor: STM32F765◦32 Bit Arm® Cortex®-M7, 216MHz, 2MB memory, 51
 * Weight and Dimensions:
 * Other Characteristics:◦Operating temperature: -20 ~ 85°c（Measured value）
 
-
-## Quick Summary
-
-* Main FMU Processor: STM32F765
-  * 32 Bit Arm® Cortex®-M7, 216MHz, 2MB memory, 512KB RAM
-
-* On-board sensors:
-  * Accelerometer/Gyroscope: ICM-20689
-  * Accelerometer/Gyroscope: BMI055
-  * Magnetometer: IST8310
-  * Barometer: MS5611
-
-* Interfaces:
-  * 8-14 PWM outputs (6 from IO, 8 from FMU)
-  * 3 dedicated PWM/Capture inputs on FMU
-  * Dedicated R/C input for CPPM
-  * Dedicated R/C input for PPM and S.Bus 
-  * analog / PWM RSSI input
-  * S.Bus servo output
-  * 5 general purpose serial ports
-  * 4 I2C ports
-  * 4 SPI buses
-  * 2 CANBuses  with serial ESC
-  * Analog inputs for voltage / current of 2 batteries
-* Power System:
-  * Power: 4.3~5.4V
-  * USB Input: 4.75~5.25V
-  * Servo Rail Input: 0~36V
-* Weight and Dimensions:
-  * Weight: 90g
-  * Dimensions: 44x84x12mm
-* Other Characteristics:
-  * Operating temperature: -20 ~ 80°c（Measured value）
-
 ## Purchase
 
 Order from [CUAV](https://cuav.taobao.com/index.htm?spm=2013.1.w5002-16371268426.2.411f26d9E18eAz).
 
 ## connection{#connection}
 
-![V5 AutoPilot](../assets/flight-controller/v5-autopilot/v5-pinouts.jpg)
+
 DSU7 is a new interface for cuav naming, including fmu swd and uart7 interfaces. When V5 runs PX4 firmware,uart7 is used as the DEBUG interface; when running ArduPilot firmware; uart7 is used as the communication serial port and usb is used to debug the output.
 > **Warning**The RCIN interface is limited to powering the rc receiver and cannot be connected to any power/load.
 
