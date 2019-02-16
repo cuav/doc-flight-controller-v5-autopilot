@@ -18,6 +18,7 @@ Main FMU Processor: STM32F765◦32 Bit Arm® Cortex®-M7, 216MHz, 2MB memory, 51
 * 4 dedicated PWM/Capture inputs on FMU
 * Dedicated R/C input for CPPM
 * Dedicated R/C input for Spektrum / DSM and S.Bus with analog / PWM RSSI input
+* analog / PWM RSSI input
 * 4 general purpose serial ports
 * 4 I2C ports
 * 3 SPI buses
@@ -27,12 +28,12 @@ Main FMU Processor: STM32F765◦32 Bit Arm® Cortex®-M7, 216MHz, 2MB memory, 51
 
 * Power System:◦Power Brick Input: 4.75~5.5V
 * USB Power Input: 4.75~5.25V
-* Servo Rail Input: 0~24V
-* Max current sensing: 120A
+* Servo Rail Input: 0~36V
 
-•Weight and Dimensions:◦Dimensions: 38x55x15.5mm
+* Weight and Dimensions:
+* Other Characteristics:◦Operating temperature: -20 ~ 85°c（Measured value）
 
-•Other Characteristics:◦Operating temperature: -40 ~ 85°c
+
 ## Quick Summary
 
 * Main FMU Processor: STM32F765
