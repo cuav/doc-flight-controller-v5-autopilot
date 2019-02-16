@@ -70,7 +70,7 @@ v5-NANO强大的性能加上mini的身材，使其不但能在普通无人机中
 
 
 
-> **Comment** DUS 7为cuav全新命名的接口，其包含FMU SWD接口及UART7，其中当V5运行PX4固件时UART7作为DEBUG接口，当V5运行ArduPilot固件UART7作为通用串行口。RCIN接口只限于给遥控器供电，不可接入任何电源/负载.
+> **Comment** 当V5-NANO运行ArduPilot(MP)固件时，支持11路PWM输出（CAP1、CAP2、CAP3分别为servo9、servo10、servo11);DEBUG接口作为通用串行口，USB接口作为DEBUG调试接口。当V5-NANO运行PX4(QGC)固件时CAP接口为PWM输入接口，debug调试接口与丝印相符。
 
 ### PX4固件编译命令 {#编译命令}
 
