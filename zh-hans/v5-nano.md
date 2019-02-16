@@ -90,7 +90,7 @@ v5-NANO强大的性能加上mini的身材，使其不但能在普通无人机中
 * 更多可选硬件信息请访问[多旋翼可选硬件](http://preview.cuav.net/tutorial/copter/)/[固定翼可选硬件](http://preview.cuav.net/tutorial/plane/zh-hans/)界面
 ###视频介绍
 
-{%youtube%}https://www.youtube.com/watch?v=YeYq6qVBz4E{%endyoutube%}
+
 
 
 
