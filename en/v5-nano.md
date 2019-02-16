@@ -19,7 +19,7 @@ Main FMU Processor: STM32F765◦32 Bit Arm® Cortex®-M7, 216MHz, 2MB memory, 51
 * Dedicated R/C input for CPPM
 * Dedicated R/C input for Spektrum / DSM and S.Bus with analog / PWM RSSI input
 * 4 general purpose serial ports
-* 2 I2C ports
+* 4 I2C ports
 * 3 SPI buses
 * 1 CANBuses for CAN ESC
 * Analog inputs for voltage / current of battery
