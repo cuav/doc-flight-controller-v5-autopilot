@@ -32,7 +32,8 @@ Main FMU Processor: STM32F765◦32 Bit Arm® Cortex®-M7, 216MHz, 2MB memory, 51
 
 * Weight and Dimensions:
   Dimensions: 60*40*14mm
-* Other Characteristics:◦Operating temperature: -20 ~ 85°c（Measured value）
+* Other Characteristics:
+Operating temperature: -20 ~ 85°c（Measured value）
 
 ## Purchase
 
