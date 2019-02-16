@@ -17,7 +17,7 @@ Main FMU Processor: STM32F765◦32 Bit Arm® Cortex®-M7, 216MHz, 2MB memory, 51
 * Interfaces: 8 PWM outputs
 * 4 dedicated PWM/Capture inputs on FMU
 * Dedicated R/C input for CPPM
-* Dedicated R/C input for Spektrum / DSM and S.Bus with analog / PWM RSSI input
+* Dedicated R/C input for Spektrum / DSM and S.Bus 
 * analog / PWM RSSI input
 * 4 general purpose serial ports
 * 4 I2C ports
