@@ -6,11 +6,10 @@
 
 ### 小身材，大能量
 
-为提高无人机内部空间的使用效率，V5—NANO采用了高度集成化设计，将主控尺寸缩减在xxmm，并且拥有的强大性能和丰富的扩展接口。
+V5 NANO自动驾驶仪专为对空间极度敏感，但又想体验V5强大性能的无人机性能敏感无人机设计，为提高无人机内部空间的使用效率，V5—NANO采用了高度集成化设计，将主控尺寸缩减在xxmm，并且拥有的强大性能和丰富的扩展接口。
 
-### 全新的开源硬件设计
+### 三度冗余传感器
 
-V5 AutoPilot是CUAV基于[FMU V5](https://docs.px4.io/en/flight_controller/pixhawk_series.html)开源硬件全新打造的高性能飞行控制系统。[FMU v5](https://docs.px4.io/en/flight_controller/pixhawk_series.html)开源硬件的特点就是采用比FMU V3更加先进的处理器、更大的flash及RAM、更稳定可靠的传感器。
 
 ### 更快的处理器
 
