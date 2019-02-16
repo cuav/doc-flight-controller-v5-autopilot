@@ -21,7 +21,7 @@ Main FMU Processor: STM32F765◦32 Bit Arm® Cortex®-M7, 216MHz, 2MB memory, 51
 * analog / PWM RSSI input
 * 4 general purpose serial ports
 * 4 I2C ports
-* 3 SPI buses
+* 4 SPI buses
 * 2 CANBuses 
 * Analog inputs for voltage / current of battery
 * 2 additional analog input
