@@ -39,40 +39,7 @@ Main FMU Processor: STM32F765◦32 Bit Arm® Cortex®-M7, 216MHz, 2MB memory, 51
 
 Order from [CUAV](https://cuav.taobao.com/index.htm?spm=2013.1.w5002-16371268426.2.411f26d9E18eAz).
 
-## connection{#connection}
 
-
-DSU7 is a new interface for cuav naming, including fmu swd and uart7 interfaces. When V5 runs PX4 firmware,uart7 is used as the DEBUG interface; when running ArduPilot firmware; uart7 is used as the communication serial port and usb is used to debug the output.
-> **Warning**The RCIN interface is limited to powering the rc receiver and cannot be connected to any power/load.
-
-## Voltage Ratings
-
-*V5 AutoPilot* can be triple-redundant on the power supply if three power sources are supplied. The three power rails are: **POWER1**, **POWER2** and **USB**.
-
-> **Note** The output power rails **FMU PWM OUT** and **I/O PWM OUT** (0V to 36V) do not power the flight controller board (and are not powered by it). You must supply power to one of **POWER1**, **POWER2** or **USB** or the board will be unpowered. 
-
-**Normal Operation Maximum Ratings**
-
-Under these conditions all power sources will be used in this order to power the system:
-1. **POWER1** and **POWER2** inputs (4.3V to 5.4V)
-1. **USB** input (4.75V to 5.25V)
-
-## Building PX4 Firmware {#building-firmware}
-
-`make px4fmu-v5_default upload`
-
-###Building ArduPilot Firmware 
-
-`./waf configure --board CUAVv5`  
-
-`./waf copter --upload`
-
-## Debug Port
-
-The system's serial console and SWD interface operate on the **FMU Debug** port. Simply connect the FTDI cable to the Debug & F7 SWD connector.
-To access the I/O Debug port, the user must remove the V5-AutoPilot shell.
-Both ports have standard serial pins and can be connected to a standard FTDI cable (3.3V, but 5V tolerant) or [Dronecode probe]. [Dronecode probe](https://kb.zubax.com/display/MAINKB/Dronecode+Probe+documentation).
- 
 ## Peripherals {#Optional-hardware}
 
 * [Digital Airspeed Sensor](https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-16371268452.37.6d9f48afsFgGZI&id=9512463037)
