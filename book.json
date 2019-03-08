@@ -21,8 +21,8 @@
     "cuav-doc-navbar@git+https://github.com/cuav/gitbook-plugin-cuav-doc-navbar.git",
     "cuav-fontsettings@git+https://github.com/cuav/gitbook-plugin-cuav-fontsettings.git",
     "cuav-minifier@git+https://github.com/cuav/gitbook-plugin-cuav-minifier.git",
-    "cuav-renderer@git+https://github.com/cuav/gitbook-plugin-cuav-renderer.git"
-    "youtube",
+    "cuav-renderer@git+https://github.com/cuav/gitbook-plugin-cuav-renderer.git",
+    "youtube"
   ],
   "pluginsConfig": {
     "toolbar": {
