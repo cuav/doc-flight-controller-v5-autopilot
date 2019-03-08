@@ -1,31 +1,50 @@
 {
-  "title": "pixhack-v5",
-  "description": "pixhack v5说明文档",
+  "title": "v5-autopilot",
+  "description": "v5飞行控制器说明文档",
   "language": "zh-hans",
   "plugins": [
-    "youtube",
-    "language-picker",
+    "anchors",
+    "back-to-top-button",
+    "page-toc-button",
+    "prism",
     "richquotes",
-    "-sharing",
+    "search-pro",
+    "toolbar",
+    "-fontsettings",
     "-highlight",
     "-livereload",
-    "prism",
-    "-theme-default",
-    "theme-cuav",
-    "cuav-chapters",
     "-lunr",
     "-search",
-    "search-pro"
+    "-sharing",
+    "cuav-doc-chapters@git+https://github.com/cuav/gitbook-plugin-cuav-doc-chapters.git",
+    "cuav-doc-favicon@git+https://github.com/cuav/gitbook-plugin-cuav-doc-favicon.git",
+    "cuav-doc-navbar@git+https://github.com/cuav/gitbook-plugin-cuav-doc-navbar.git",
+    "cuav-fontsettings@git+https://github.com/cuav/gitbook-plugin-cuav-fontsettings.git",
+    "cuav-minifier@git+https://github.com/cuav/gitbook-plugin-cuav-minifier.git",
+    "cuav-renderer@git+https://github.com/cuav/gitbook-plugin-cuav-renderer.git"
+    "youtube"
   ],
   "pluginsConfig": {
-    "theme-cuav": {
-      "showGitBookLink": false,
-      "navbar": {
-        "navAjaxUrl": "/nav.json",
-        "brand": {
-             "url": "/"
+    "toolbar": {
+      "buttons": [
+        {
+          "label": "Bug tracker",
+          "icon": "fa fa-bug",
+          "position": "left",
+          "url": "https://github.com/cuav/doc-flight-controller-v5-autopilot/issues/new?title=Doc+Bug:+{{title}}&body=DESCRIBE+PROBLEM+WITH+DOCS+HERE%0A%0ABug+Page:+[{{title}}]({{url}})"
+        },
+        {
+          "label": "Edit page on github",
+          "icon": "fa fa-pencil-square-o",
+          "position": "left",
+          "url": "https://github.com/cuav/doc-flight-controller-v5-autopilot/edit/master/{{filepath_lang}}"
+        },
+        {
+          "label": "GitHub",
+          "icon": "fa fa-github",
+          "url": "https://github.com/cuav/doc-flight-controller-v5-autopilot"
         }
-      }
+      ]
     }
   }
 }
