@@ -1,0 +1,488 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>PX4原生固件 · v5-autopilot</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-cuav-doc-chapters/cuav-doc-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-cuav-doc-navbar/cuav-navbar-styles.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-cuav-fontsettings/cuav-fontsettings.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+
+<meta name="renderer" content="webkit">
+
+
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../pre-arm.html">
+    
+    
+    <link rel="prev" href="ardupilot-firmware.html">
+    
+
+
+
+    </head>
+    <body>
+         
+<div class="cuav-navbar">
+  <div class="cuav-navbar-logo">
+    <a href="//doc.cuav.net">
+      <img src="../../gitbook/gitbook-plugin-cuav-doc-navbar/images/cuav-logo.png" alt="CUAV logo">
+    </a>
+  </div>
+</div>
+
+
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter" data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    V5系列自动驾驶仪
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter" data-level="1.2" data-path="../v5.html">
+            
+                <a href="../v5.html">
+            
+                    
+                    V5自动驾驶仪
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter" data-level="1.2.1" data-path="../v5.html">
+            
+                <a href="../v5.html#硬件参数">
+            
+                    
+                    硬件参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter" data-level="1.2.2" data-path="../v5.html">
+            
+                <a href="../v5.html#接口定义">
+            
+                    
+                    接口定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter" data-level="1.2.3" data-path="../v5.html">
+            
+                <a href="../v5.html#编译命令">
+            
+                    
+                    编译命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter" data-level="1.2.4" data-path="../v5.html">
+            
+                <a href="../v5.html#可选硬件">
+            
+                    
+                    可选硬件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter" data-level="1.3" data-path="../v5-nano.html">
+            
+                <a href="../v5-nano.html">
+            
+                    
+                    V5 NANO自动驾驶仪
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter" data-level="1.3.1" data-path="../v5-nano.html">
+            
+                <a href="../v5-nano.html#硬件参数">
+            
+                    
+                    硬件参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter" data-level="1.3.2" data-path="../v5-nano.html">
+            
+                <a href="../v5-nano.html#接口定义">
+            
+                    
+                    接口定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter" data-level="1.3.3" data-path="../v5-nano.html">
+            
+                <a href="../v5-nano.html#编译命令">
+            
+                    
+                    编译命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter" data-level="1.3.4" data-path="../v5-nano.html">
+            
+                <a href="../v5-nano.html#可选硬件">
+            
+                    
+                    可选硬件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter" data-level="1.4" data-path="../install-driver.html">
+            
+                <a href="../install-driver.html">
+            
+                    
+                    驱动安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter" data-level="1.5">
+            
+                <a target="_blank" href="javascript:;">
+            
+                    
+                    加载固件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter" data-level="1.5.1" data-path="ardupilot-firmware.html">
+            
+                <a href="ardupilot-firmware.html">
+            
+                    
+                    ArduPilot固件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.2" data-path="px4-firmware.html">
+            
+                <a href="px4-firmware.html">
+            
+                    
+                    PX4原生固件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter" data-level="1.6" data-path="../pre-arm.html">
+            
+                <a href="../pre-arm.html">
+            
+                    
+                    Pre-arm报错信息分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="..">PX4原生固件</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x52A0;&#x8F7D;px4&#x539F;&#x751F;&#x56FA;&#x4EF6;"><a name="&#x52A0;&#x8F7D;px4&#x539F;&#x751F;&#x56FA;&#x4EF6;" class="plugin-anchor" href="#&#x52A0;&#x8F7D;px4&#x539F;&#x751F;&#x56FA;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x52A0;&#x8F7D;PX4&#x539F;&#x751F;&#x56FA;&#x4EF6;</h1>
+<hr>
+<p>V5 AutoPilot&#x652F;&#x6301;PX4&#x539F;&#x751F;&#x56FA;&#x4EF6;&#x53CA;ArduPilot,&#x4E0B;&#x9762;&#x4E3B;&#x8981;&#x8BB2;&#x89E3;&#x5982;&#x4F55;&#x52A0;&#x8F7D;&#x8FD9;&#x4E24;&#x79CD;&#x56FA;&#x4EF6;</p>
+<h3 id="px4&#x539F;&#x751F;&#x56FA;&#x4EF6;"><a name="px4&#x539F;&#x751F;&#x56FA;&#x4EF6;" class="plugin-anchor" href="#px4&#x539F;&#x751F;&#x56FA;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>PX4&#x539F;&#x751F;&#x56FA;&#x4EF6;</h3>
+<p>&#x5728;V5 AutoPilot&#x4F5C;&#x4E3A;&#x5F3A;&#x5927;&#x7684;&#x98DE;&#x884C;&#x63A7;&#x5236;&#x7CFB;&#x7EDF;&#xFF0C;&#x5F53;&#x7136;&#x5C11;&#x4E0D;&#x4E86;&#x5BF9;PX4&#x539F;&#x751F;&#x56FA;&#x4EF6;&#x7684;&#x517C;&#x5BB9;&#x3002;&#x5728;&#x4EA7;&#x54C1;&#x6D4B;&#x8BD5;&#x9636;&#x6BB5;&#xFF0C;CUAV&#x4E0E;DEV&#x56E2;&#x961F;&#x5C31;&#x8FBE;&#x6210;&#x4E86;&#x6DF1;&#x5165;&#x7684;&#x5408;&#x4F5C;&#x610F;&#x5411;&#xFF0C;&#x5C06;&#x5C31;PX4&#x539F;&#x751F;&#x56FA;&#x4EF6;&#x4E0E;V5 AutoPilot&#x7684;&#x8F6F;&#x786C;&#x4EF6;&#x9002;&#x914D;&#x5C55;&#x5F00;&#x6DF1;&#x5EA6;&#x7684;&#x5408;&#x4F5C;&#x4E0E;&#x4EA4;&#x6D41;.&#x901A;&#x8FC7;&#x4E0D;&#x65AD;&#x7684;&#x6D4B;&#x8BD5;&#x548C;&#x4FEE;&#x6539;&#xFF0C;V5 AutoPilot&#x4E13;&#x7528;&#x7684;PX4&#x539F;&#x751F;&#x56FA;&#x4EF6;&#x5DF2;&#x7ECF;&#x53D1;&#x5E03;&#x4E86;&#x7A33;&#x5B9A;&#x7248;&#x672C;&#xFF08;&#x7B2C;&#x4E00;&#x7248;&#x4E3A;1.80 stable).</p>
+<h5 id="&#x5728;&#x7EBF;&#x70E7;&#x5F55;&#xFF1A;"><a name="&#x5728;&#x7EBF;&#x70E7;&#x5F55;&#xFF1A;" class="plugin-anchor" href="#&#x5728;&#x7EBF;&#x70E7;&#x5F55;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5728;&#x7EBF;&#x70E7;&#x5F55;&#xFF1A;</h5>
+<p>PX4&#x539F;&#x751F;&#x56FA;&#x4EF6;&#x5728;&#x7EBF;&#x70E7;&#x5F55;&#x56FA;&#x4EF6;&#x9700;&#x8981;&#x5148;&#x5B89;&#x88C5;<a href="http://qgroundcontrol.com/" target="_blank">QGoundcontrol</a>&#x5730;&#x9762;&#x7AD9;,&#x6253;&#x5F00;&#x5730;&#x9762;&#x7AD9;&#x300B;&#x70B9;&#x51FB;&#x8BBE;&#x7F6E;&#x56FE;&#x6807;&#x300B;&#x70B9;&#x51FB;firmware <img src="../../assets/load-px4-firmware.jpg" alt="px4 firmware">&#x5C06;V5 AutoPilot&#x901A;&#x8FC7;usb&#x7EBF;&#x8FDE;&#x63A5;&#x5230;&#x7535;&#x8111;&#xFF0C;&#x5730;&#x9762;&#x7AD9;&#x53F3;&#x8FB9;&#x5C06;&#x5F39;&#x51FA;&#x4E0B;&#x56FE;&#x7A97;&#x53E3;&#x300B;&#x9009;&#x62E9;&#x9700;&#x8981;PX4 Flight STACK&#x300B;OK<img src="../../assets/load-px4-firmware2.jpg" alt="px4 firmware2">&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#xFF0C;&#x5982;&#x4E0D;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x5341;&#x51E0;&#x79D2;&#x540E;&#x5C06;&#x81EA;&#x52A8;&#x8FDE;&#x63A5;&#x3002;<img src="../../assets/load-px4-firmware3.jpg" alt="px4 firmware3"><img src="../../assets/load-px4-firmware4.JPG" alt="px4 firmware4"></p>
+<hr>
+<h5 id="&#x672C;&#x5730;&#x70E7;&#x5F55;&#xFF1A;"><a name="&#x672C;&#x5730;&#x70E7;&#x5F55;&#xFF1A;" class="plugin-anchor" href="#&#x672C;&#x5730;&#x70E7;&#x5F55;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x672C;&#x5730;&#x70E7;&#x5F55;&#xFF1A;</h5>
+<p>&#x8BF7;&#x5148;&#x4E0B;&#x8F7D;<a href="http://px4-travis.s3.amazonaws.com/Firmware/stable/px4fmu-v5_default.px4" target="_blank">PX4&#x539F;&#x751F;&#x56FA;&#x4EF6;</a>&#x81F3;&#x672C;&#x5730;<br>&#x6253;&#x5F00;&#x5730;&#x9762;&#x7AD9;&#x300B;&#x70B9;&#x51FB;&#x8BBE;&#x7F6E;&#x56FE;&#x6807;&#x300B;&#x70B9;&#x51FB;firmware <img src="../../assets/load-px4-firmware.jpg" alt="px4 firmware">&#x5C06;V5 AutoPilot&#x901A;&#x8FC7;usb&#x7EBF;&#x8FDE;&#x63A5;&#x5230;&#x7535;&#x8111;&#xFF0C;&#x5730;&#x9762;&#x7AD9;&#x53F3;&#x8FB9;&#x5C06;&#x5F39;&#x51FA;&#x4E0B;&#x56FE;&#x7A97;&#x53E3;&#x300B;&#x9009;&#x62E9;&#x9700;&#x8981;PX4 Flight STACK&#x300B;&#x52FE;&#x9009;advanced settings&gt;custon firmware file&#x300B;&#x627E;&#x5230;&#x4E0B;&#x8F7D;&#x7684;&#x56FA;&#x4EF6;&#x300B;ok<br><img src="../../assets/load-px4-firmware5.JPG" alt="px4 firmware5">&#x52A0;&#x8F7D;&#x5B8C;&#x6210;&#xFF0C;&#x5982;&#x4E0D;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x5341;&#x51E0;&#x79D2;&#x540E;&#x5C06;&#x81EA;&#x52A8;&#x8FDE;&#x63A5;&#x3002;<img src="../../assets/load-px4-firmware3.jpg" alt="px4 firmware3"><img src="../../assets/load-px4-firmware4.JPG" alt="px4 firmware4"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching "<span class="search-query"></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class="search-query"></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ardupilot-firmware.html" class="navigation navigation-prev" aria-label="Previous page: ArduPilot固件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../pre-arm.html" class="navigation navigation-next" aria-label="Next page: Pre-arm报错信息分析">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>var gitbook=gitbook||[];gitbook.push(function(){gitbook.page.hasChanged({page:{title:"PX4原生固件",level:"1.5.2",depth:2,next:{title:"Pre-arm报错信息分析",level:"1.6",depth:1,path:"pre-arm.md",ref:"pre-arm.md",articles:[]},previous:{title:"ArduPilot固件",level:"1.5.1",depth:2,path:"load-firmware/ardupilot-firmware.md",ref:"load-firmware/ardupilot-firmware.md",articles:[]},dir:"ltr"},config:{plugins:["anchors","back-to-top-button","page-toc-button","prism","richquotes","search-pro","toolbar","-fontsettings","-highlight","-livereload","-lunr","-search","-sharing","cuav-doc-chapters@git+https://github.com/cuav/gitbook-plugin-cuav-doc-chapters.git","cuav-doc-favicon@git+https://github.com/cuav/gitbook-plugin-cuav-doc-favicon.git","cuav-doc-navbar@git+https://github.com/cuav/gitbook-plugin-cuav-doc-navbar.git","cuav-fontsettings@git+https://github.com/cuav/gitbook-plugin-cuav-fontsettings.git","cuav-minifier@git+https://github.com/cuav/gitbook-plugin-cuav-minifier.git","cuav-renderer@git+https://github.com/cuav/gitbook-plugin-cuav-renderer.git","youtube"],styles:{website:"styles/website.css",pdf:"styles/pdf.css",epub:"styles/epub.css",mobi:"styles/mobi.css",ebook:"styles/ebook.css",print:"styles/print.css"},pluginsConfig:{"cuav-doc-chapters":{},prism:{},youtube:{},"search-pro":{},"cuav-renderer":{},"cuav-doc-navbar":{},"cuav-minifier":{},richquotes:{},"page-toc-button":{},"back-to-top-button":{},"cuav-fontsettings":{},"cuav-doc-favicon":{},toolbar:{buttons:[{label:"Bug tracker",icon:"fa fa-bug",position:"left",url:"https://github.com/cuav/doc-flight-controller-v5-autopilot/issues/new?title=Doc+Bug:+{{title}}&body=DESCRIBE+PROBLEM+WITH+DOCS+HERE%0A%0ABug+Page:+[{{title}}]({{url}})"},{label:"Edit page on github",icon:"fa fa-pencil-square-o",position:"left",url:"https://github.com/cuav/doc-flight-controller-v5-autopilot/edit/master/{{filepath_lang}}"},{label:"GitHub",icon:"fa fa-github",url:"https://github.com/cuav/doc-flight-controller-v5-autopilot"}]},"theme-default":{styles:{website:"styles/website.css",pdf:"styles/pdf.css",epub:"styles/epub.css",mobi:"styles/mobi.css",ebook:"styles/ebook.css",print:"styles/print.css"},showLevel:!1},anchors:{}},theme:"default",pdf:{pageNumbers:!0,fontSize:12,fontFamily:"Arial",paperSize:"a4",chapterMark:"pagebreak",pageBreaksBefore:"/",margin:{right:62,left:62,top:56,bottom:56}},structure:{langs:"LANGS.md",readme:"README.md",glossary:"GLOSSARY.md",summary:"SUMMARY.md"},variables:{},title:"v5-autopilot",language:"zh-hans",gitbook:"*",description:"v5飞行控制器说明文档"},file:{path:"load-firmware/px4-firmware.md",mtime:"2019-03-11T06:39:39.107Z",type:"markdown"},gitbook:{version:"3.2.3",time:"2019-03-11T06:40:43.719Z"},basePath:"..",book:{language:"zh-hans"}})})</script>
+</div>
+
+
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-toolbar/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-cuav-doc-chapters/cuav-doc-chapters.js"></script>
+        
+    
+
+    </body>
+</html>
+

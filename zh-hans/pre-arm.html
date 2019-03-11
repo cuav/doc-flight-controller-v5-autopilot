@@ -1,0 +1,650 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Pre-arm报错信息分析 · v5-autopilot</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-cuav-doc-chapters/cuav-doc-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-cuav-doc-navbar/cuav-navbar-styles.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-cuav-fontsettings/cuav-fontsettings.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+
+<meta name="renderer" content="webkit">
+
+
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="load-firmware/px4-firmware.html">
+    
+
+
+
+    </head>
+    <body>
+         
+<div class="cuav-navbar">
+  <div class="cuav-navbar-logo">
+    <a href="//doc.cuav.net">
+      <img src="../gitbook/gitbook-plugin-cuav-doc-navbar/images/cuav-logo.png" alt="CUAV logo">
+    </a>
+  </div>
+</div>
+
+
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    V5系列自动驾驶仪
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter" data-level="1.2" data-path="v5.html">
+            
+                <a href="v5.html">
+            
+                    
+                    V5自动驾驶仪
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter" data-level="1.2.1" data-path="v5.html">
+            
+                <a href="v5.html#硬件参数">
+            
+                    
+                    硬件参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter" data-level="1.2.2" data-path="v5.html">
+            
+                <a href="v5.html#接口定义">
+            
+                    
+                    接口定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter" data-level="1.2.3" data-path="v5.html">
+            
+                <a href="v5.html#编译命令">
+            
+                    
+                    编译命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter" data-level="1.2.4" data-path="v5.html">
+            
+                <a href="v5.html#可选硬件">
+            
+                    
+                    可选硬件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter" data-level="1.3" data-path="v5-nano.html">
+            
+                <a href="v5-nano.html">
+            
+                    
+                    V5 NANO自动驾驶仪
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter" data-level="1.3.1" data-path="v5-nano.html">
+            
+                <a href="v5-nano.html#硬件参数">
+            
+                    
+                    硬件参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter" data-level="1.3.2" data-path="v5-nano.html">
+            
+                <a href="v5-nano.html#接口定义">
+            
+                    
+                    接口定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter" data-level="1.3.3" data-path="v5-nano.html">
+            
+                <a href="v5-nano.html#编译命令">
+            
+                    
+                    编译命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter" data-level="1.3.4" data-path="v5-nano.html">
+            
+                <a href="v5-nano.html#可选硬件">
+            
+                    
+                    可选硬件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter" data-level="1.4" data-path="install-driver.html">
+            
+                <a href="install-driver.html">
+            
+                    
+                    驱动安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter" data-level="1.5">
+            
+                <a target="_blank" href="javascript:;">
+            
+                    
+                    加载固件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter" data-level="1.5.1" data-path="load-firmware/ardupilot-firmware.html">
+            
+                <a href="load-firmware/ardupilot-firmware.html">
+            
+                    
+                    ArduPilot固件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter" data-level="1.5.2" data-path="load-firmware/px4-firmware.html">
+            
+                <a href="load-firmware/px4-firmware.html">
+            
+                    
+                    PX4原生固件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="pre-arm.html">
+            
+                <a href="pre-arm.html">
+            
+                    
+                    Pre-arm报错信息分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".">Pre-arm报错信息分析</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="pre-arm-&#x5B89;&#x5168;&#x68C0;&#x67E5;&#x7A0B;&#x5E8F;"><a name="pre-arm-&#x5B89;&#x5168;&#x68C0;&#x67E5;&#x7A0B;&#x5E8F;" class="plugin-anchor" href="#pre-arm-&#x5B89;&#x5168;&#x68C0;&#x67E5;&#x7A0B;&#x5E8F;"><i class="fa fa-link" aria-hidden="true"></i></a>Pre-Arm &#x5B89;&#x5168;&#x68C0;&#x67E5;&#x7A0B;&#x5E8F; </h2>
+<hr>
+<p>APM&#xFF1A;Copter&#x591A;&#x65CB;&#x7FFC; &#x56FA;&#x4EF6;&#x5185;&#x90E8;&#x6709;&#x4E00;&#x5957;&#x975E;&#x5E38;&#x5B8C;&#x5584;&#x7684;Pre-Arm&#x5B89;&#x5168;&#x68C0;&#x67E5;&#x63D0;&#x9192;&#x673A;&#x5236;&#xFF0C;&#x4F1A;&#x68C0;&#x67E5;&#x4F60;&#x7684;&#x98DE;&#x884C;&#x5668;&#x662F;&#x5426;&#x6709;&#x5927;&#x91CF;&#x95EE;&#x9898;,&#x5305;&#x62EC;&#x5404;&#x79CD;&#x672A;&#x6821;&#x51C6;&#xFF0C;&#x5DF2;&#x7ECF;&#x662F;&#x5426;&#x4F20;&#x611F;&#x5668;&#x5DF2;&#x7ECF;&#x51FA;&#x73B0;&#x635F;&#x574F;&#xFF0C;&#x5F53;&#x7136;&#x8FD9;&#x89E3;&#x9501;&#x68C0;&#x67E5;&#x673A;&#x5236;&#x4E5F;&#x4E0D;&#x662F;&#x767E;&#x5206;&#x767E;&#x53EF;&#x9760;&#x7684;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#x5168;&#x90E8;&#x53C2;&#x6570;&#x5217;&#x8868;Arming-check &#x7981;&#x7528;&#x5B83;</p>
+<h3 id="&#x6CE8;&#x610F;&#xFF1A;&#x56E0;&#x4E3A;&#x98DE;&#x63A7;&#x56FA;&#x4EF6;&#x7248;&#x672C;&#x7684;&#x4E0D;&#x65AD;&#x66F4;&#x65B0;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x4E00;&#x4E9B;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x4F1A;&#x6709;&#x6240;&#x6539;&#x53D8;&#xFF0C;&#x53EF;&#x80FD;&#x4E0E;&#x672C;&#x6587;&#x51FA;&#x73B0;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x6216;&#x8005;&#x672C;&#x6587;&#x6CA1;&#x6709;&#x8BF4;&#x660E;&#x7684;&#x9519;&#x8BEF;&#xFF1B;&#x90FD;&#x662F;&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x3002;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x4F7F;&#x7528;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x641C;&#x7D22;&#x4E00;&#x4E0B;"><a name="&#x6CE8;&#x610F;&#xFF1A;&#x56E0;&#x4E3A;&#x98DE;&#x63A7;&#x56FA;&#x4EF6;&#x7248;&#x672C;&#x7684;&#x4E0D;&#x65AD;&#x66F4;&#x65B0;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x4E00;&#x4E9B;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x4F1A;&#x6709;&#x6240;&#x6539;&#x53D8;&#xFF0C;&#x53EF;&#x80FD;&#x4E0E;&#x672C;&#x6587;&#x51FA;&#x73B0;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x6216;&#x8005;&#x672C;&#x6587;&#x6CA1;&#x6709;&#x8BF4;&#x660E;&#x7684;&#x9519;&#x8BEF;&#xFF1B;&#x90FD;&#x662F;&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x3002;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x4F7F;&#x7528;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x641C;&#x7D22;&#x4E00;&#x4E0B;" class="plugin-anchor" href="#&#x6CE8;&#x610F;&#xFF1A;&#x56E0;&#x4E3A;&#x98DE;&#x63A7;&#x56FA;&#x4EF6;&#x7248;&#x672C;&#x7684;&#x4E0D;&#x65AD;&#x66F4;&#x65B0;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x4E00;&#x4E9B;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x4F1A;&#x6709;&#x6240;&#x6539;&#x53D8;&#xFF0C;&#x53EF;&#x80FD;&#x4E0E;&#x672C;&#x6587;&#x51FA;&#x73B0;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x6216;&#x8005;&#x672C;&#x6587;&#x6CA1;&#x6709;&#x8BF4;&#x660E;&#x7684;&#x9519;&#x8BEF;&#xFF1B;&#x90FD;&#x662F;&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x3002;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x4F7F;&#x7528;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x641C;&#x7D22;&#x4E00;&#x4E0B;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6CE8;&#x610F;&#xFF1A;&#x56E0;&#x4E3A;&#x98DE;&#x63A7;&#x56FA;&#x4EF6;&#x7248;&#x672C;&#x7684;&#x4E0D;&#x65AD;&#x66F4;&#x65B0;&#xFF0C;&#x6709;&#x53EF;&#x80FD;&#x4E00;&#x4E9B;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#x4F1A;&#x6709;&#x6240;&#x6539;&#x53D8;&#xFF0C;&#x53EF;&#x80FD;&#x4E0E;&#x672C;&#x6587;&#x51FA;&#x73B0;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x6216;&#x8005;&#x672C;&#x6587;&#x6CA1;&#x6709;&#x8BF4;&#x660E;&#x7684;&#x9519;&#x8BEF;&#xFF1B;&#x90FD;&#x662F;&#x6B63;&#x5E38;&#x60C5;&#x51B5;&#x3002;&#x53EF;&#x4EE5;&#x81EA;&#x884C;&#x4F7F;&#x7528;&#x641C;&#x7D22;&#x5F15;&#x64CE;&#x641C;&#x7D22;&#x4E00;&#x4E0B; </h3>
+<p>&#x4F7F;&#x7528;GCS&#x5730;&#x9762;&#x7AD9;&#x67E5;&#x770B;Pre-Arm&#x9519;&#x8BEF;&#x4FE1;&#x606F;</p>
+<p>&#x5728;&#x95EA;&#x70C1;&#x9EC4;&#x8272;&#x706F;&#x65F6;&#xFF0C;&#x4F7F;&#x7528;&#x8005;&#x4F1A;&#x65E0;&#x6CD5;&#x89E3;&#x9501;&#xFF0C;&#x800C;&#x4E14;&#x89E3;&#x9501;&#x65F6;&#x8702;&#x9E23;&#x5668;&#x4E5F;&#x4F1A;&#x957F;&#x9E23;2&#x4E0B;&#x3002;&#x6B64;&#x65F6;&#x4F60;&#x5FC5;&#x987B;&#x8FDE;&#x63A5;&#x4E0A;&#x5730;&#x9762;&#x7AD9;&#xFF0C;&#x624D;&#x80FD;&#x6392;&#x9664;&#x7A76;&#x7ADF;&#x662F;&#x4EC0;&#x4E48;&#x95EE;&#x9898;&#x5BFC;&#x81F4;&#x4E86;&#x4E0D;&#x80FD;&#x89E3;&#x9501;&#x548C;&#x98DE;&#x884C;&#xFF0C;&#x4E00;&#x822C;&#x901A;&#x5E38;&#x662F; &#x4F20;&#x611F;&#x5668;&#x672A;&#x6821;&#x51C6; &#x6216;&#x8005;&#x51FA;&#x73B0;&#x4E86;&#x5931;&#x63A7;&#x4FDD;&#x62A4;&#x3001;&#x4F4E;&#x538B;&#x8BBE;&#x7F6E;&#x4E0D;&#x6B63;&#x786E;&#x7B49;&#x7B49;&#xFF0C;&#x4E0B;&#x9762;&#x4F1A;&#x8BE6;&#x7EC6;&#x5206;&#x6790;&#x6BCF;&#x79CD;&#x62A5;&#x9519;&#x5185;&#x5BB9;:</p>
+<pre class="language-"><code>&#x9605;&#x8BFB;&#x4E0B;&#x9762;&#x5185;&#x5BB9;&#x524D;&#xFF0C;&#x8BF7;&#x786E;&#x4FDD;&#x4F60;&#x5DF2;&#x7ECF;&#x4F7F;&#x7528;&#x5E76;&#x8FDE;&#x63A5;&#x5730;&#x9762;&#x7AD9;&#x3001;&#x505A;&#x4E86;&#x98DE;&#x63A7;&#x677F;&#x6821;&#x51C6;&#x4EE5;&#x53CA;&#x4F1A;&#x7B80;&#x5355;&#x4F7F;&#x7528;&#x9065;&#x63A7;&#x5668;&#x3002;
+&#x5982;&#x679C;&#x8FD8;&#x4E0D;&#x4F1A;&#xFF0C;&#x8BF7;&#x67E5;&#x770B;&#x4E4B;&#x524D;&#x7684;&#x7AE0;&#x8282;&#xFF1A;&#xFF09;
+</code></pre><p>&#x4F7F;&#x7528;Pre-Arm&#x4FE1;&#x606F;&#x5206;&#x6790;&#x4E0D;&#x80FD;&#x89E3;&#x9501;&#x539F;&#x56E0;&#xFF1A;</p>
+<ol>
+<li>&#x98DE;&#x63A7;&#x677F;&#x5DF2;&#x7ECF;&#x8FDE;&#x63A5;&#x597D;&#x9065;&#x63A7;&#x5668;&#x63A5;&#x6536;&#x673A;&#xFF0C;&#x5E76;
+<strong>&#x62C6;&#x9664;&#x87BA;&#x65CB;&#x6868;</strong>
+&#x548C;&#x52A8;&#x529B;&#x7535;&#x6C60;</li>
+<li>&#x901A;&#x8FC7;USB&#x6216;&#x8005;&#x6570;&#x4F20;&#xFF08;WP-LINK\3DR\XBEE\XTND&#xFF09;&#x8FDE;&#x63A5;&#x4E0A;&#x5730;&#x9762;&#x7AD9;&#xFF08;&#x7535;&#x8111;&#x5730;&#x9762;&#x7AD9;&#xFF1A;Mission Planner&#x6216;&#x8005;&#x5B89;&#x5353;&#xFF1A;CUAV Hfight&#xFF09;</li>
+<li>&#x6253;&#x5F00;&#x4F60;&#x7684;&#x9065;&#x63A7;&#x5668;&#xFF0C;&#x5E76;&#x8BD5;&#x56FE;&#x89E3;&#x9501;[&#x89E3;&#x9501;&#x901A;&#x9053;&#x662F;&#xFF1A;&#x6CB9;&#x95E8;&#x6700;&#x4F4E; (3&#x901A;&#x9053;&#xFF09;&#x3001;YAW&#x6700;&#x53F3;&#xFF08;4&#x901A;&#x9053;&#xFF09;]</li>
+<li>&#x6B64;&#x65F6;&#xFF0C;&#x5728;&#x5730;&#x9762;&#x7AD9;&#x7A97;&#x53E3;&#x5E94;&#x8BE5;&#x53EF;&#x4EE5;&#x770B;&#x89C1;
+<strong>&#x7EA2;&#x8272;</strong>
+&#x7684;Pre-Arm &#x9519;&#x8BEF;&#x63D0;&#x793A;&#xFF0C;
+<strong>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x63D0;&#x793A;</strong>
+&#xFF0C;&#x4E00;&#x822C;&#x662F;
+<strong>&#x89E3;&#x9501;&#x901A;&#x9053;&#x4E0D;&#x6B63;&#x786E;</strong>
+&#x5BFC;&#x81F4;&#x98DE;&#x63A7;&#x65E0;&#x6CD5;&#x611F;&#x77E5;&#x4F60;&#x7684;&#x89E3;&#x9501;&#x64CD;&#x4F5C;&#xFF1B;&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x5728;&#x5730;&#x9762;&#x7AD9; &#x98DE;&#x884C;&#x6570;&#x636E; &#x754C;&#x9762;-&#x72B6;&#x6001;&#x680F; &#x70B9;&#x89E3;&#x9501;&#x64CD;&#x4F5C;</li>
+</ol>
+<hr>
+<blockquote>
+<h2 id="&#x89E3;&#x9501;&#x5931;&#x8D25;&#x7684;&#x63D0;&#x793A;&#x4FE1;&#x606F;&#xFF1A;"><a name="&#x89E3;&#x9501;&#x5931;&#x8D25;&#x7684;&#x63D0;&#x793A;&#x4FE1;&#x606F;&#xFF1A;" class="plugin-anchor" href="#&#x89E3;&#x9501;&#x5931;&#x8D25;&#x7684;&#x63D0;&#x793A;&#x4FE1;&#x606F;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x89E3;&#x9501;&#x5931;&#x8D25;&#x7684;&#x63D0;&#x793A;&#x4FE1;&#x606F;&#xFF1A; </h2>
+</blockquote>
+<hr>
+<blockquote>
+<h3 id="&#x9065;&#x63A7;&#x5668;&#x5E38;&#x89C1;&#x9519;&#x8BEF;&#x63D0;&#x793A;&#x4FE1;&#x606F;&#xFF1A;"><a name="&#x9065;&#x63A7;&#x5668;&#x5E38;&#x89C1;&#x9519;&#x8BEF;&#x63D0;&#x793A;&#x4FE1;&#x606F;&#xFF1A;" class="plugin-anchor" href="#&#x9065;&#x63A7;&#x5668;&#x5E38;&#x89C1;&#x9519;&#x8BEF;&#x63D0;&#x793A;&#x4FE1;&#x606F;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9065;&#x63A7;&#x5668;&#x5E38;&#x89C1;&#x9519;&#x8BEF;&#x63D0;&#x793A;&#xFF1A; </h3>
+</blockquote>
+<h4 id="no-rc-receiver&#xFF08;&#x6CA1;&#x6709;&#x9065;&#x63A7;&#x5668;&#x63A5;&#x6536;&#x673A;&#xFF09;"><a name="no-rc-receiver&#xFF08;&#x6CA1;&#x6709;&#x9065;&#x63A7;&#x5668;&#x63A5;&#x6536;&#x673A;&#xFF09;" class="plugin-anchor" href="#no-rc-receiver&#xFF08;&#x6CA1;&#x6709;&#x9065;&#x63A7;&#x5668;&#x63A5;&#x6536;&#x673A;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>NO RC Receiver&#xFF08;&#x6CA1;&#x6709;&#x9065;&#x63A7;&#x5668;&#x63A5;&#x6536;&#x673A;&#xFF09; </h4>
+<p>&#x8BF7;&#x68C0;&#x6D4B;&#x63A5;&#x6536;&#x673A;&#x7684;&#x4FE1;&#x53F7;&#x8F93;&#x5165;&#x662F;&#x5426;&#x6B63;&#x5E38;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<p>1&#xFF1A;&#x5982;&#x679C;&#x662F;&#x4F7F;&#x7528;PPM&#x7F16;&#x7801;&#x5668;&#x5C0F;&#x677F;&#xFF0C;&#x68C0;&#x67E5;&#x4E00;&#x4E0B;PPM&#x7F16;&#x7801;&#x5668; &#x84DD;&#x8272;&#x72B6;&#x6001;&#x706F;&#x662F;&#x5426;&#x8FD8;&#x4F1A;&#x95EA;&#x70C1;&#xFF08;&#x53EF;&#x4EE5;&#x5224;&#x65AD;PPM&#x7F16;&#x7801;&#x5668;&#x662F;&#x5426;&#x8FD8;&#x5728;&#x5DE5;&#x4F5C;&#xFF09;</p>
+<p>2&#xFF1A;&#x5982;&#x679C;&#x4F7F;&#x7528;SBUS&#x548C;PPM&#x63A5;&#x6536;&#x673A;&#xFF0C;&#x68C0;&#x67E5;&#x63A5;&#x6536;&#x673A;&#x8BBE;&#x7F6E;&#x662F;&#x5426;&#x6B63;&#x786E;</p>
+<p>3&#xFF1A;&#x6709;&#x53EF;&#x80FD;&#x98DE;&#x63A7;&#x786C;&#x4EF6;&#x56FA;&#x4EF6;&#xFF0C;&#x9700;&#x8981;&#x8FD4;&#x5382;&#x68C0;&#x4FEE;&#xFF0C;&#x4E00;&#x822C;&#x53EF;&#x80FD;&#x6027;&#x6BD4;&#x8F83;&#x5C0F;</p>
+<h4 id="rc-not-calibrated--&#xFF08;&#x9065;&#x63A7;&#x5668;&#x672A;&#x6821;&#x51C6;&#xFF09;"><a name="rc-not-calibrated--&#xFF08;&#x9065;&#x63A7;&#x5668;&#x672A;&#x6821;&#x51C6;&#xFF09;" class="plugin-anchor" href="#rc-not-calibrated--&#xFF08;&#x9065;&#x63A7;&#x5668;&#x672A;&#x6821;&#x51C6;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>RC not calibrated &#xFF08;&#x9065;&#x63A7;&#x5668;&#x672A;&#x6821;&#x51C6;&#xFF09;</strong> </h4>
+<p>&#x9065;&#x63A7;&#x5668;&#x8FD8;&#x672A;&#x6821;&#x51C6;&#xFF0C;&#x6216;&#x8005;&#x8303;&#x56F4;&#x4E0D;&#x5728;&#x98DE;&#x63A7;&#x8BB0;&#x5F55;&#x503C;&#x5185;&#xFF0C;&#x901A;&#x5E38;&#x90FD;&#x662F;&#x8BBE;&#x7F6E;&#x4E86;&#x9065;&#x63A7;&#x5668;&#x6216;&#x8005;&#x6362;&#x4E86;&#x9065;&#x63A7;&#x5668;&#x5BFC;&#x81F4;&#xFF0C;&#x8BF7;&#x91CD;&#x65B0;&#x505A;&#x6821;&#x51C6;&#x65E2;&#x53EF;</p>
+<p>RC3&#x6CB9;&#x95E8;&#x901A;&#x9053;MIN&#x6700;&#x5C0F;&#x503C;&#x53CA;MAX&#x6700;&#x5927;&#x503C;&#x7406;&#x60F3;&#x8303;&#x56F4;&#x662F;1100-1900.</p>
+<p>&#x800C;&#x5176;&#x4ED6;&#x901A;&#x9053;&#x6700;&#x5C0F;&#x503C;&#x4E0D;&#x8981;&#x5927;&#x4E8E;1300&#x548C;&#x6700;&#x5927;&#x503C;&#x4E0D;&#x8981;&#x5C0F;&#x4E8E;1700&#x3002;&#x7406;&#x60F3;&#x503C;&#x4E5F;&#x662F;1100-1900</p>
+<blockquote>
+<h3 id="&#x7535;&#x5B50;&#x7F57;&#x76D8;&#x5E38;&#x89C1;&#x9519;&#x8BEF;&#x63D0;&#x793A;&#xFF1A;"><a name="&#x7535;&#x5B50;&#x7F57;&#x76D8;&#x5E38;&#x89C1;&#x9519;&#x8BEF;&#x63D0;&#x793A;&#xFF1A;" class="plugin-anchor" href="#&#x7535;&#x5B50;&#x7F57;&#x76D8;&#x5E38;&#x89C1;&#x9519;&#x8BEF;&#x63D0;&#x793A;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7535;&#x5B50;&#x7F57;&#x76D8;&#x5E38;&#x89C1;&#x9519;&#x8BEF;&#x63D0;&#x793A;&#xFF1A;</h3>
+</blockquote>
+<h4 id="compass-not-healthy&#xFF08;&#x7535;&#x5B50;&#x7F57;&#x76D8;&#x4E0D;&#x5065;&#x5EB7;&#xFF09;"><a name="compass-not-healthy&#xFF08;&#x7535;&#x5B50;&#x7F57;&#x76D8;&#x4E0D;&#x5065;&#x5EB7;&#xFF09;" class="plugin-anchor" href="#compass-not-healthy&#xFF08;&#x7535;&#x5B50;&#x7F57;&#x76D8;&#x4E0D;&#x5065;&#x5EB7;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>Compass not healthy&#xFF08;</strong>&#x7535;&#x5B50;&#x7F57;&#x76D8;&#x4E0D;&#x5065;&#x5EB7;<strong>&#xFF09;</strong> </h4>
+<p>&#x7535;&#x5B50;&#x7F57;&#x76D8;&#x4E0D;&#x5065;&#x5EB7;&#x7684;&#x63D0;&#x793A;&#xFF0C;&#x4E5F;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x6CA1;&#x6709;&#x6570;&#x503C;&#x6216;&#x8005;&#x786C;&#x4EF6;&#x635F;&#x574F;</p>
+<p>&#x4E5F;&#x6709;&#x53EF;&#x80FD;&#x73AF;&#x5883;&#x6E29;&#x5EA6;&#x4F4E;&#x4E8E;0&#x4E0B;&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5BFC;&#x81F4;&#x7F57;&#x76D8;&#x4F20;&#x611F;&#x5668;&#x6CA1;&#x6709;&#x6570;&#x503C;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<ol>
+<li>&#x91CD;&#x65B0;&#x4E0A;&#x7535;</li>
+<li>&#x5982;&#x679C;&#x6E29;&#x5EA6;&#x8FC7;&#x4F4E;&#xFF0C;&#x8BF7;&#x505A;&#x597D;&#x4FDD;&#x6E29;&#x63AA;&#x65BD;&#xFF0C;&#x91CD;&#x65B0;&#x4E0A;&#x7535;</li>
+<li>&#x5728;&#x5730;&#x9762;&#x7AD9;-&#x72B6;&#x6001;&#x68C0;&#x67E5;&#x7F57;&#x76D8;&#x6570;&#x503C;&#x662F;&#x5426;&#x6B63;&#x786E; MX1 MY1 MZ1 \MX2 MY2 MZ2</li>
+</ol>
+<h4 id="compass-not-calibrated&#xFF08;&#x7F57;&#x76D8;&#x6CA1;&#x6709;&#x6821;&#x51C6;&#xFF09;"><a name="compass-not-calibrated&#xFF08;&#x7F57;&#x76D8;&#x6CA1;&#x6709;&#x6821;&#x51C6;&#xFF09;" class="plugin-anchor" href="#compass-not-calibrated&#xFF08;&#x7F57;&#x76D8;&#x6CA1;&#x6709;&#x6821;&#x51C6;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>Compass not calibrated&#xFF08;</strong>&#x7F57;&#x76D8;&#x6CA1;&#x6709;&#x6821;&#x51C6;<strong>&#xFF09;</strong> </h4>
+<p>&#x7F57;&#x76D8;&#x6CA1;&#x6709;&#x6821;&#x51C6;&#xFF0C;&#x6216;&#x8005;&#x7F57;&#x76D8;&#x88AB;&#x79FB;&#x9664;&#x548C;&#x65B0;&#x589E;&#xFF0C;&#x90FD;&#x4F1A;&#x63D0;&#x793A;&#x7F57;&#x76D8;&#x672A;&#x6821;&#x51C6;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<ol>
+<li>&#x5B89;&#x88C5;&#x597D;&#x7F57;&#x76D8;&#x540E;&#xFF0C;&#x91CD;&#x65B0;&#x505A;&#x6821;&#x51C6;</li>
+</ol>
+<h4 id="compass-offsets-too-high-&#xFF08;&#x7F57;&#x76D8;&#x504F;&#x79FB;&#x503C;&#x592A;&#x9AD8;&#xFF09;"><a name="compass-offsets-too-high-&#xFF08;&#x7F57;&#x76D8;&#x504F;&#x79FB;&#x503C;&#x592A;&#x9AD8;&#xFF09;" class="plugin-anchor" href="#compass-offsets-too-high-&#xFF08;&#x7F57;&#x76D8;&#x504F;&#x79FB;&#x503C;&#x592A;&#x9AD8;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>Compass offsets too high &#xFF08;&#x7F57;&#x76D8;&#x504F;&#x79FB;&#x503C;&#x592A;&#x9AD8;&#xFF09;</strong> </h4>
+<p>&#x4E3B;&#x7F57;&#x76D8;&#x7684;&#x504F;&#x79FB;&#x503C;(i.e. sqrt(x^2+y^2+z^2)) &#x5927;&#x4E8E;500&#xFF0C;&#x5C31;&#x4F1A;&#x63D0;&#x793A;&#x8FD9;&#x4E2A;&#xFF0C;&#x4E00;&#x822C;&#x60C5;&#x51B5;&#x90FD;&#x662F;&#x98DE;&#x63A7;&#x6216;&#x8005;GPS&#x9644;&#x8FD1;&#x6709;<strong>&#x78C1;&#x6027;&#x7269;&#x4F53;&#xFF08;&#x9A6C;&#x8FBE;&#x3001;&#x87BA;&#x4E1D;&#x3001;&#x7535;&#x6C60;&#x7B49;&#xFF09;</strong>&#x5BFC;&#x81F4;&#xFF0C;&#x6216;&#x8005;&#x73AF;&#x5883;&#x6709;&#x6BD4;&#x8F83;&#x5F3A;&#x7684;&#x78C1;&#x573A;&#x5E72;&#x6270;&#x3002;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<ol>
+<li>&#x8BF7;&#x6392;&#x9664;&#x5E72;&#x6270;&#x540E;&#x91CD;&#x65B0;&#x4E0A;&#x7535;</li>
+<li>&#x91CD;&#x65B0;&#x6362;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x5B89;&#x88C5;&#x98DE;&#x63A7;&#x6216;&#x8005;GPS&#xFF0C;&#x91CD;&#x65B0;&#x6821;&#x51C6;</li>
+<li>&#x6362;&#x4E00;&#x4E2A;&#x73AF;&#x5883;&#x8BD5;&#x8BD5;</li>
+</ol>
+<h4 id="check-mag-field-&#xFF08;&#x68C0;&#x67E5;&#x7F57;&#x76D8;&#x78C1;&#x573A;&#xFF09;"><a name="check-mag-field-&#xFF08;&#x68C0;&#x67E5;&#x7F57;&#x76D8;&#x78C1;&#x573A;&#xFF09;" class="plugin-anchor" href="#check-mag-field-&#xFF08;&#x68C0;&#x67E5;&#x7F57;&#x76D8;&#x78C1;&#x573A;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>Check mag field &#xFF08;&#x68C0;&#x67E5;&#x7F57;&#x76D8;&#x78C1;&#x573A;&#xFF09;</strong> </h4>
+<p>&#x5982;&#x679C;&#x5728;&#x5BA4;&#x5185;&#x3001;&#x6216;&#x6362;&#x4E86;&#x4E0D;&#x540C;&#x73AF;&#x5883;&#x3001;&#x6216;&#x9644;&#x8FD1;&#x6709;&#x78C1;&#x5E72;&#x6270;&#x53EF;&#x80FD;&#x4F1A;&#x63D0;&#x793A;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<ol>
+<li>&#x5982;&#x679C;&#x6362;&#x4E86;&#x73AF;&#x5883;&#xFF0C;&#x91CD;&#x65B0;&#x505A;&#x6821;&#x51C6;&#x5373;&#x53EF;</li>
+<li>&#x5982;&#x679C;&#x5728;&#x5BA4;&#x5185;&#x6216;&#x8005;&#x6709;&#x5E72;&#x6270;&#x6E90;&#xFF0C;&#x79BB;&#x5F00;&#x5E72;&#x6270;&#x6E90;&#x5373;&#x53EF;</li>
+</ol>
+<h3 id="compasses-inconsistent&#xFF1A;&#xFF08;&#x7F57;&#x76D8;&#x4E0D;&#x4E00;&#x81F4;&#xFF09;"><a name="compasses-inconsistent&#xFF1A;&#xFF08;&#x7F57;&#x76D8;&#x4E0D;&#x4E00;&#x81F4;&#xFF09;" class="plugin-anchor" href="#compasses-inconsistent&#xFF1A;&#xFF08;&#x7F57;&#x76D8;&#x4E0D;&#x4E00;&#x81F4;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>Compasses inconsistent&#xFF1A;&#xFF08;&#x7F57;&#x76D8;&#x4E0D;&#x4E00;&#x81F4;&#xFF09;</strong></h3>
+<p>&#x5185;&#x90E8;&#x7F57;&#x76D8;&#x548C;&#x5916;&#x90E8;&#x7F57;&#x76D8;&#x6307;&#x5411;&#x4E0D;&#x4E00;&#x81F4;&#xFF08;&gt;45&#x5EA6;&#xFF09;&#x3002;&#x8FD9;&#x901A;&#x5E38;&#x662F;&#x5916;&#x90E8;&#x7F57;&#x76D8;&#x65B9;&#x5411;&#x8BBE;&#x7F6E;&#x4E0D;&#x6B63;&#x786E;&#x5BFC;&#x81F4;&#xFF08;compass_orient&#xFF09;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<ol>
+<li>&#x91CD;&#x65B0;&#x505A;&#x6821;&#x51C6;&#x5373;&#x53EF;&#x3002;&#x9009;&#x62E9;PX4 &#x6821;&#x51C6;&#xFF0C;&#x65B9;&#x5411;&#x4E0D;&#x7528;&#x9009;&#x62E9;</li>
+</ol>
+<blockquote>
+<h2 id="gps&#x5E38;&#x89C1;&#x6545;&#x969C;&#xFF1A;"><a name="gps&#x5E38;&#x89C1;&#x6545;&#x969C;&#xFF1A;" class="plugin-anchor" href="#gps&#x5E38;&#x89C1;&#x6545;&#x969C;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>GPS&#x5E38;&#x89C1;&#x6545;&#x969C;&#xFF1A; </h2>
+</blockquote>
+<h4 id="gps-glitch&#xFF08;gps&#x6545;&#x969C;&#xFF09;--need-3d-fix-&#x9700;&#x8981;3d&#x5B9A;&#x4F4D;"><a name="gps-glitch&#xFF08;gps&#x6545;&#x969C;&#xFF09;--need-3d-fix-&#x9700;&#x8981;3d&#x5B9A;&#x4F4D;" class="plugin-anchor" href="#gps-glitch&#xFF08;gps&#x6545;&#x969C;&#xFF09;--need-3d-fix-&#x9700;&#x8981;3d&#x5B9A;&#x4F4D;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>GPS Glitch&#xFF08;GPS&#x6545;&#x969C;&#xFF09; / Need 3D Fix (&#x9700;&#x8981;3D&#x5B9A;&#x4F4D;)</strong> </h4>
+<p>&#x5982;&#x679C;GPS&#x672A;&#x5B9A;&#x4F4D;&#x6210;&#x529F;&#x6216;&#x8005;&#x6CA1;&#x6709;GPS.&#x800C;&#x4E14;&#x4F7F;&#x7528;&#x4E86;&#x9700;&#x8981;GPS&#x7684;&#x98DE;&#x884C;&#x6A21;&#x5F0F;(Loiter Poshold)&#x6216;&#x8005;&#x7535;&#x5B50;&#x56F4;&#x680F;&#x88AB;&#x542F;&#x52A8;&#xFF0C;&#x5C31;&#x4F1A;&#x63D0;&#x793A;&#x8FD9;2&#x4E2A;&#x9519;&#x8BEF;&#x4FE1;&#x606F;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<ol>
+<li>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x5B89;&#x88C5;GPS&#x6216;&#x8005;&#x5728;&#x5BA4;&#x5185;&#x98DE;&#x884C;&#xFF0C;&#x8BF7;&#x5207;&#x6362;&#x5230;&#x4E0D;&#x9700;&#x8981;GPS&#x7684;&#x76F8;&#x5173;</li>
+<li>&#x7B49;&#x5F85;GPS&#x88AB;3D FIX&#x5B9A;&#x4F4D;</li>
+<li>NO GPS &#x6CA1;&#x6709;&#x68C0;&#x67E5;&#x5230;GPS&#x786C;&#x4EF6;&#xFF1A;&#x68C0;&#x67E5;&#x8FDE;&#x63A5;&#x7EBF;</li>
+<li>NO FIX&#x6CA1;&#x6709;3D&#x9501;&#x5B9A;&#xFF0C;&#x8BF7;&#x628A;&#x98DE;&#x884C;&#x5668;&#x548C;GPS&#x653E;&#x5728;&#x5BA4;&#x5916;&#x65E0;&#x906E;&#x6321;&#x7684;&#x5730;&#x65B9;</li>
+</ol>
+<h4 id="bad-velocity&#xFF1A;&#xFF08;&#x574F;&#x7684;&#x901F;&#x5EA6;&#xFF09;"><a name="bad-velocity&#xFF1A;&#xFF08;&#x574F;&#x7684;&#x901F;&#x5EA6;&#xFF09;" class="plugin-anchor" href="#bad-velocity&#xFF1A;&#xFF08;&#x574F;&#x7684;&#x901F;&#x5EA6;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>Bad Velocity&#xFF1A;&#xFF08;&#x574F;&#x7684;&#x901F;&#x5EA6;&#xFF09;</strong> </h4>
+<p>&#x4E00;&#x822C;&#x662F;GPS&#x98D8;&#x9038;&#x901F;&#x5EA6;&#x8FC7;&#x5FEB;&#xFF0C;&#x9AD8;&#x4E8E;50CM/S</p>
+<p>&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x53EF;&#x80FD;&#x662F;&#x79FB;&#x52A8;&#x901F;&#x5EA6;&#x8FC7;&#x5FEB;&#xFF0C;&#x6216;&#x8005;&#x52A0;&#x901F;&#x8BA1;&#x6CA1;&#x6709;&#x6B63;&#x786E;&#x6821;&#x51C6;&#xFF0C;&#x6216;&#x8005;GPS&#x5237;&#x65B0;&#x7387;&#x4F4E;&#x4E8E;5HZ&#x3002;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<ol>
+<li>&#x7B49;&#x5F85;GPS&#x536B;&#x661F;&#x9501;&#x5B9A;&#x66F4;&#x591A;&#x6570;&#x91CF;&#x3002;HDOP&#x5C0F;&#x4E8E;1.5</li>
+</ol>
+<h4 id="high-gps-hdop&#xFF1A;&#xFF08;hdop&#x4E0D;&#x8FBE;&#x6807;&#xFF0C;&#x4E0D;&#x591F;&#x5C0F;&#xFF1B;&#x6570;&#x5B57;&#x8D8A;&#x5C0F;&#x8FBE;&#x6807;&#x7CBE;&#x5EA6;&#x8D8A;&#x9AD8;&#xFF09;"><a name="high-gps-hdop&#xFF1A;&#xFF08;hdop&#x4E0D;&#x8FBE;&#x6807;&#xFF0C;&#x4E0D;&#x591F;&#x5C0F;&#xFF1B;&#x6570;&#x5B57;&#x8D8A;&#x5C0F;&#x8FBE;&#x6807;&#x7CBE;&#x5EA6;&#x8D8A;&#x9AD8;&#xFF09;" class="plugin-anchor" href="#high-gps-hdop&#xFF1A;&#xFF08;hdop&#x4E0D;&#x8FBE;&#x6807;&#xFF0C;&#x4E0D;&#x591F;&#x5C0F;&#xFF1B;&#x6570;&#x5B57;&#x8D8A;&#x5C0F;&#x8FBE;&#x6807;&#x7CBE;&#x5EA6;&#x8D8A;&#x9AD8;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>High GPS HDOP&#xFF1A;&#xFF08;HDOP&#x4E0D;&#x8FBE;&#x6807;&#xFF0C;&#x4E0D;&#x591F;&#x5C0F;&#xFF1B;&#x6570;&#x5B57;&#x8D8A;&#x5C0F;&#x8FBE;&#x6807;&#x7CBE;&#x5EA6;&#x8D8A;&#x9AD8;&#xFF09;</strong> </h4>
+<p>&#x536B;&#x661F;&#x5B9A;&#x4F4D;&#x7CBE;&#x5EA6;HDOP&#x8FC7;&#x9AD8;&#xFF0C;&#x4E00;&#x822C;&#x662F;&#x536B;&#x661F;&#x6570;&#x91CF;&#x4E0D;&#x591F;&#x5BFC;&#x81F4;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<ol>
+<li>&#x653E;&#x5728;&#x5BA4;&#x5916;&#x65E0;&#x906E;&#x6321;&#x73AF;&#x5883;&#x3002;&#x7B49;&#x5F85;&#x51E0;&#x5206;&#x949F;&#xFF0C;&#x536B;&#x661F;&#x9501;&#x5B9A;&#x66F4;&#x591A;&#x540E;</li>
+</ol>
+<p>HDOP&#x5728;&#x5730;&#x9762;&#x7AD9;&#x8FD9;&#x4E2A;&#x4F4D;&#x7F6E;&#x53EF;&#x4EE5;&#x770B;&#x89C1;</p>
+<blockquote>
+<h3 id="ins&#x68C0;&#x67E5;&#xFF08;&#x4F8B;&#x5982;&#x52A0;&#x901F;&#x8BA1;&#x548C;&#x9640;&#x87BA;&#x4EEA;&#x68C0;&#x67E5;&#xFF09;"><a name="ins&#x68C0;&#x67E5;&#xFF08;&#x4F8B;&#x5982;&#x52A0;&#x901F;&#x8BA1;&#x548C;&#x9640;&#x87BA;&#x4EEA;&#x68C0;&#x67E5;&#xFF09;" class="plugin-anchor" href="#ins&#x68C0;&#x67E5;&#xFF08;&#x4F8B;&#x5982;&#x52A0;&#x901F;&#x8BA1;&#x548C;&#x9640;&#x87BA;&#x4EEA;&#x68C0;&#x67E5;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>INS&#x68C0;&#x67E5;&#xFF08;&#x4F8B;&#x5982;&#x52A0;&#x901F;&#x8BA1;&#x548C;&#x9640;&#x87BA;&#x4EEA;&#x68C0;&#x67E5;&#xFF09; </h3>
+</blockquote>
+<h4 id="ins-not-calibrated&#xFF1A;&#xFF08;ins&#x52A0;&#x901F;&#x8BA1;&#x6CA1;&#x6709;&#x6821;&#x51C6;&#xFF09;"><a name="ins-not-calibrated&#xFF1A;&#xFF08;ins&#x52A0;&#x901F;&#x8BA1;&#x6CA1;&#x6709;&#x6821;&#x51C6;&#xFF09;" class="plugin-anchor" href="#ins-not-calibrated&#xFF1A;&#xFF08;ins&#x52A0;&#x901F;&#x8BA1;&#x6CA1;&#x6709;&#x6821;&#x51C6;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>INS not calibrated&#xFF1A;&#xFF08;INS&#x52A0;&#x901F;&#x8BA1;&#x6CA1;&#x6709;&#x6821;&#x51C6;&#xFF09;</strong> </h4>
+<p>&#x52A0;&#x901F;&#x8BA1;&#x6CA1;&#x6709;&#x6821;&#x51C6;&#xFF0C;&#x6216;&#x8005;&#x6821;&#x51C6;&#x4E0D;&#x6B63;&#x786E;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<ol>
+<li>&#x91CD;&#x65B0;&#x6821;&#x51C6;&#x52A0;&#x901F;&#x8BA1;&#x3002;&#x67E5;&#x770B;&#x6821;&#x51C6;&#x52A0;&#x901F;&#x8BA1;&#x7AE0;&#x8282;</li>
+</ol>
+<h4 id="accels-not-healthy&#xFF08;&#x52A0;&#x901F;&#x8BA1;&#x4E0D;&#x5065;&#x5EB7;&#xFF09;"><a name="accels-not-healthy&#xFF08;&#x52A0;&#x901F;&#x8BA1;&#x4E0D;&#x5065;&#x5EB7;&#xFF09;" class="plugin-anchor" href="#accels-not-healthy&#xFF08;&#x52A0;&#x901F;&#x8BA1;&#x4E0D;&#x5065;&#x5EB7;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>Accels not healthy&#xFF08;&#x52A0;&#x901F;&#x8BA1;&#x4E0D;&#x5065;&#x5EB7;&#xFF09;</strong> </h4>
+<p>&#x8FD9;&#x53EF;&#x80FD;&#x662F;&#x4E00;&#x4E2A;&#x786C;&#x4EF6;&#x95EE;&#x9898;&#xFF0C;&#x4E5F;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x5237;&#x4E86;&#x56FA;&#x4EF6;&#x4E4B;&#x540E;&#xFF0C;&#x9A6C;&#x4E0A;&#x542F;&#x52A8;&#x98DE;&#x63A7;&#xFF0C;&#x4E5F;&#x4F1A;&#x63D0;&#x793A;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<ol>
+<li>&#x91CD;&#x65B0;&#x4E0A;&#x7535;&#x98DE;&#x63A7;&#x677F;&#xFF0C;&#x5E76;&#x91CD;&#x65B0;&#x8FDE;&#x63A5;</li>
+<li>&#x8054;&#x7CFB;CUAV&#x6280;&#x672F;&#x652F;&#x6301;&#x90E8;&#x95E8;&#x89E3;&#x51B3;</li>
+</ol>
+<h4 id="gyros-not-healthy&#xFF08;&#x9640;&#x87BA;&#x4EEA;&#x4E0D;&#x5065;&#x5EB7;&#xFF09;"><a name="gyros-not-healthy&#xFF08;&#x9640;&#x87BA;&#x4EEA;&#x4E0D;&#x5065;&#x5EB7;&#xFF09;" class="plugin-anchor" href="#gyros-not-healthy&#xFF08;&#x9640;&#x87BA;&#x4EEA;&#x4E0D;&#x5065;&#x5EB7;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>Gyros not healthy&#xFF08;&#x9640;&#x87BA;&#x4EEA;&#x4E0D;&#x5065;&#x5EB7;&#xFF09;</strong> </h4>
+<p>&#x9640;&#x87BA;&#x4EEA;&#x6570;&#x636E;&#x8DF3;&#x52A8;&#x6BD4;&#x8F83;&#x5389;&#x5BB3;&#xFF0C;&#x6570;&#x503C;&#x4E0D;&#x5728;&#x8303;&#x56F4;&#x3001;&#x6CA1;&#x6709;&#x6570;&#x636E;&#xFF0C;&#x8FD9;&#x4E5F;&#x53EF;&#x80FD;&#x662F;&#x4E00;&#x4E2A;&#x786C;&#x4EF6;&#x95EE;&#x9898;&#xFF0C;&#x6216;&#x8005;&#x4E0A;&#x7535;&#x65F6;&#x6CA1;&#x6709;&#x9759;&#x6B62;&#xFF0C;&#x5BFC;&#x81F4;&#x7684;&#x62A5;&#x9519;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<ol>
+<li>&#x653E;&#x5E73;&#x4E0D;&#x52A8;&#xFF0C;&#x91CD;&#x65B0;&#x4E0A;&#x7535;</li>
+<li>&#x5982;&#x679C;&#x5C1D;&#x8BD5;&#x91CD;&#x65B0;&#x4E0A;&#x7535;&#x51E0;&#x6B21;&#x8FD8;&#x662F;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x8BF7;&#x8054;&#x7CFB;CUAV&#x6280;&#x672F;&#x90E8;&#x95E8;&#x8FDB;&#x884C;&#x6392;&#x9664;</li>
+</ol>
+<h4 id="gyro-cal-failed-&#xFF08;&#x9640;&#x87BA;&#x4EEA;&#x6821;&#x51C6;&#x5931;&#x8D25;&#xFF09;"><a name="gyro-cal-failed-&#xFF08;&#x9640;&#x87BA;&#x4EEA;&#x6821;&#x51C6;&#x5931;&#x8D25;&#xFF09;" class="plugin-anchor" href="#gyro-cal-failed-&#xFF08;&#x9640;&#x87BA;&#x4EEA;&#x6821;&#x51C6;&#x5931;&#x8D25;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>Gyro cal failed &#xFF08;&#x9640;&#x87BA;&#x4EEA;&#x6821;&#x51C6;&#x5931;&#x8D25;&#xFF09;</strong> </h4>
+<p>&#x4E00;&#x822C;&#x662F;&#x4E0A;&#x7535;&#x65F6;&#xFF08;&#x5728;&#x7EA2;&#x84DD;&#x706F;&#x95EA;&#x70C1;&#x65F6;&#xFF0C;&#x88AB;&#x65AD;&#x4E86;&#x7535;&#x6E90;&#x3002;&#x6216;&#x8005;&#x6570;&#x503C;&#x8D85;&#x8FC7;&#x5CF0;&#x503C;&#x4E5F;&#x4F1A;&#x5BFC;&#x81F4;&#x8FD9;&#x4E2A;&#x9519;&#x8BEF;&#x4FE1;&#x606F;&#xFF09;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<ol>
+<li>&#x91CD;&#x65B0;&#x653E;&#x5E73;&#x4E0A;&#x7535;</li>
+</ol>
+<h4 id="gyros-inconsistent&#xFF1A;&#xFF08;&#x9640;&#x87BA;&#x4EEA;&#x4E0D;&#x4E00;&#x81F4;&#xFF09;"><a name="gyros-inconsistent&#xFF1A;&#xFF08;&#x9640;&#x87BA;&#x4EEA;&#x4E0D;&#x4E00;&#x81F4;&#xFF09;" class="plugin-anchor" href="#gyros-inconsistent&#xFF1A;&#xFF08;&#x9640;&#x87BA;&#x4EEA;&#x4E0D;&#x4E00;&#x81F4;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>Gyros inconsistent&#xFF1A;&#xFF08;&#x9640;&#x87BA;&#x4EEA;&#x4E0D;&#x4E00;&#x81F4;&#xFF09;</strong> </h4>
+<p>2&#x4E2A;&#x9640;&#x87BA;&#x4EEA;&#x7684;&#x65CB;&#x8F6C;&#x5229;&#x7387;&#x76F8;&#x5DEE;20&#x5EA6;/&#x79D2;&#x4EE5;&#x4E0A;&#xFF0C;&#x8FD9;&#x6709;&#x53EF;&#x80FD;&#x662F;&#x4E00;&#x4E2A;&#x786C;&#x4EF6;&#x6545;&#x969C;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x9640;&#x87BA;&#x4EEA;&#x6807;&#x5B9A;&#x4E0D;&#x6B63;&#x786E;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;:</p>
+<ol>
+<li>&#x91CD;&#x65B0;&#x4E0A;&#x7535;</li>
+<li>&#x8054;&#x7CFB;CUAV&#x6280;&#x672F;&#x90E8;&#x95E8;</li>
+</ol>
+<h3 id="check-board-voltage&#xFF1A;&#xFF08;&#x68C0;&#x67E5;&#x4E3B;&#x677F;&#x7535;&#x538B;&#xFF09;"><a name="check-board-voltage&#xFF1A;&#xFF08;&#x68C0;&#x67E5;&#x4E3B;&#x677F;&#x7535;&#x538B;&#xFF09;" class="plugin-anchor" href="#check-board-voltage&#xFF1A;&#xFF08;&#x68C0;&#x67E5;&#x4E3B;&#x677F;&#x7535;&#x538B;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>Check Board Voltage&#xFF1A;&#xFF08;&#x68C0;&#x67E5;&#x4E3B;&#x677F;&#x7535;&#x538B;&#xFF09;</strong></h3>
+<p>&#x5F53;&#x4E3B;&#x677F;&#x7535;&#x538B;&#x4F4E;&#x4E8E;4.3 &#x9AD8;&#x4E8E;5.8V&#x65F6;&#xFF0C;&#x5C31;&#x4F1A;&#x51FA;&#x53D1;<strong>Check Board Voltag</strong></p>
+<p>&#x4F7F;&#x7528;&#x8FC7;&#x4F4E;&#x7684;USB&#x7535;&#x538B;&#x4F9B;&#x7535;&#x4E5F;&#x4F1A;&#x89E6;&#x53D1;&#x3002;</p>
+<p>&#x5982;&#x679C;&#x8FD9;&#x662F;&#x4ECE;&#x4E00;&#x4E2A;&#x7535;&#x6E90;&#x6A21;&#x5757;&#x4F9B;&#x7535;&#xFF0C;&#x90FD;&#x4F1A;&#x63D0;&#x793A;&#x68C0;&#x67E5;<strong>&#x4E3B;&#x677F;&#x7535;&#x538B;</strong>&#xFF0C;&#x8FD9;&#x53EF;&#x80FD;&#x662F;&#x4E00;&#x4E2A;&#x4E25;&#x91CD;&#x7684;&#x95EE;&#x9898;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<ol>
+<li>&#x68C0;&#x67E5;&#x4F9B;&#x7535;&#x7535;&#x538B;&#x662F;&#x5426;&#x5728;5V&#x5DE6;&#x53F3;</li>
+<li>&#x4F7F;&#x7528;CUAV IV &#x6A21;&#x5757;&#x4F9B;&#x7535;&#x6216;&#x8005;&#x6807;&#x51C6;&#x7684;5V&#x7535;&#x538B;&#x6A21;&#x5757;</li>
+</ol>
+<h3 id="check-fsthrvalue-&#xFF1A;&#xFF08;&#x68C0;&#x67E5;&#x5931;&#x63A7;&#x6CB9;&#x95E8;&#x503C;&#xFF09;"><a name="check-fsthrvalue-&#xFF1A;&#xFF08;&#x68C0;&#x67E5;&#x5931;&#x63A7;&#x6CB9;&#x95E8;&#x503C;&#xFF09;" class="plugin-anchor" href="#check-fsthrvalue-&#xFF1A;&#xFF08;&#x68C0;&#x67E5;&#x5931;&#x63A7;&#x6CB9;&#x95E8;&#x503C;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><strong>Check FS_THR_VALUE &#xFF1A;&#xFF08;&#x68C0;&#x67E5;&#x5931;&#x63A7;&#x6CB9;&#x95E8;&#x503C;&#xFF09;</strong> </h3>
+<p>&#x5F53;&#x524D;&#x6CB9;&#x95E8;&#x503C;&#x8FC7;&#x4F4E;&#xFF0C;&#x5DF2;&#x7ECF;&#x89E6;&#x53D1;&#x4E86;&#x5931;&#x63A7;&#x4FDD;&#x62A4;</p>
+<p>&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;</p>
+<ol>
+<li>&#x68C0;&#x67E5;&#x9065;&#x63A7;&#x5668;&#x6CB9;&#x95E8;&#x901A;&#x9053;&#x8BBE;&#x7F6E;&#xFF0C;&#x6B63;&#x5E38;&#x503C;&#x4E0D;&#x8981;&#x4F4E;&#x4E8E;1000&#xFF0C;&#x6700;&#x5408;&#x9002;&#x7684;&#x503C;&#x5728;1100&#x5DE6;&#x53F3;</li>
+<li>&#x68C0;&#x67E5;&#x5730;&#x9762;&#x7AD9;-&#x5931;&#x63A7;&#x4FDD;&#x62A4;&#x8BBE;&#x7F6E;-&#x6CB9;&#x95E8;&#x503C;&#x662F;&#x5426;&#x8BBE;&#x7F6E;&#x7684;&#x8FC7;&#x9AD8;</li>
+</ol>
+<h2 id="bad-loging&#xFF08;&#x50A8;&#x5B58;&#x65E5;&#x5FD7;&#x5931;&#x8D25;&#xFF09;"><a name="bad-loging&#xFF08;&#x50A8;&#x5B58;&#x65E5;&#x5FD7;&#x5931;&#x8D25;&#xFF09;" class="plugin-anchor" href="#bad-loging&#xFF08;&#x50A8;&#x5B58;&#x65E5;&#x5FD7;&#x5931;&#x8D25;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>bad loging&#xFF08;&#x50A8;&#x5B58;&#x65E5;&#x5FD7;&#x5931;&#x8D25;&#xFF09; </h2>
+<p>&#x672A;&#x8BC6;&#x522B;&#x5230;sd&#x5361;&#xFF0C;&#x8BF7;&#x68C0;&#x67E5;sd&#x5361;&#x662F;&#x5426;&#x63D2;&#x597D;&#x6216;&#x8005;&#x62D4;&#x63D2;&#x4E00;&#x4E0B;sd&#x5361;&#x3002;</p>
+<h3 id="acrobalrollpitch"><a name="acrobalrollpitch" class="plugin-anchor" href="#acrobalrollpitch"><i class="fa fa-link" aria-hidden="true"></i></a>ACRO_BAL_ROLL/PITCH: </h3>
+<p>ACRO_BAL_ROLL&#x53C2;&#x6570;&#x9AD8;&#x4E8E;&#x81EA;&#x7A33; roll&#x7684;P&#x503C;&#x548C;/&#x6216;ACRO_BAL_PITCH&#x53C2;&#x6570;&#x9AD8;&#x4E8E;&#x7A33;&#x5B9A;pitch&#x7684;P&#x503C;&#x3002; &#x8FD9;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x98DE;&#x884C;&#x5458;&#x65E0;&#x6CD5;&#x63A7;&#x5236;ACRO&#x6A21;&#x5F0F;&#x7684;&#x503E;&#x659C;&#x89D2;&#x5EA6;&#xFF0C;&#x56E0;&#x4E3A;Acro Trainer&#x7684;&#x7A33;&#x5B9A;&#x5C06;&#x4F1A;&#x8D85;&#x8FC7;&#x98DE;&#x884C;&#x5458;&#x7684;&#x8F93;&#x5165;&#x3002;</p>
+<h4 id="&#x5173;&#x95ED;&#x5B89;&#x5168;&#x89E3;&#x9501;&#x68C0;&#x67E5;&#xFF1A;"><a name="&#x5173;&#x95ED;&#x5B89;&#x5168;&#x89E3;&#x9501;&#x68C0;&#x67E5;&#xFF1A;" class="plugin-anchor" href="#&#x5173;&#x95ED;&#x5B89;&#x5168;&#x89E3;&#x9501;&#x68C0;&#x67E5;&#xFF1A;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5173;&#x95ED;&#x5B89;&#x5168;&#x89E3;&#x9501;&#x68C0;&#x67E5;&#xFF1A; </h4>
+<p>&#x5982;&#x679C;&#x4F60;&#x89C9;&#x5F97;&#x62A5;&#x9519;&#x662F;&#x65E0;&#x610F;&#x4E49;&#x7684;&#xFF0C;&#x800C;&#x4E14;&#x53C8;&#x5F71;&#x54CD;&#x4F60;&#x7684;&#x89E3;&#x9501;&#x98DE;&#x884C;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5730;&#x9762;&#x7AD9;&#x53BB;&#x5173;&#x95ED;&#x4ED6;&#x3002;</p>
+<ol>
+<li>&#x98DE;&#x63A7;&#x8FDE;&#x63A5;&#x5230;&#x5730;&#x9762;&#x7AD9;&#xFF08;&#x4F7F;&#x7528;usb&#x6216;&#x8005;&#x6570;&#x4F20;&#xFF09;</li>
+<li>&#x914D;&#x7F6E;/&#x8C03;&#x8BD5; &#x9009;&#x9879;&gt;&#x6807;&#x51C6;&#x53C2;&#x6570;</li>
+<li>ARMING_CHECK&#x9009;&#x62E9;disable &gt; &#x5199;&#x5165;&#x53C2;&#x6570;</li>
+</ol>
+<h3 id="no-io-thread-heartbeat-&#xFF08;&#x6CA1;&#x6709;io&#x5FC3;&#x8DF3;&#x5305;&#xFF09;"><a name="no-io-thread-heartbeat-&#xFF08;&#x6CA1;&#x6709;io&#x5FC3;&#x8DF3;&#x5305;&#xFF09;" class="plugin-anchor" href="#no-io-thread-heartbeat-&#xFF08;&#x6CA1;&#x6709;io&#x5FC3;&#x8DF3;&#x5305;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>No IO Thread Heartbeat ()&#xFF08;&#x6CA1;&#x6709;io&#x5FC3;&#x8DF3;&#x5305;&#xFF09;</h3>
+<ol>
+<li>&#x68C0;&#x67E5;SD&#x5361;&#x662F;&#x5426;&#x63D2;&#x597D;</li>
+<li>&#x62D4;&#x63D2;&#x4E00;&#x4E0B;SD&#x5361;</li>
+</ol>
+<h3 id="rc--minimum-is-greater-than-trim&#x9065;&#x63A7;&#x4FE1;&#x53F7;&#x8F93;&#x5165;&#x901A;&#x9053;&#x6700;&#x5C0F;&#x503C;&#x5927;&#x4E8E;trim&#x503C;&#xFF09;"><a name="rc--minimum-is-greater-than-trim&#x9065;&#x63A7;&#x4FE1;&#x53F7;&#x8F93;&#x5165;&#x901A;&#x9053;&#x6700;&#x5C0F;&#x503C;&#x5927;&#x4E8E;trim&#x503C;&#xFF09;" class="plugin-anchor" href="#rc--minimum-is-greater-than-trim&#x9065;&#x63A7;&#x4FE1;&#x53F7;&#x8F93;&#x5165;&#x901A;&#x9053;&#x6700;&#x5C0F;&#x503C;&#x5927;&#x4E8E;trim&#x503C;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>RC*  minimum is greater than trim(&#x9065;&#x63A7;&#x4FE1;&#x53F7;&#x8F93;&#x5165;&#x901A;&#x9053;*&#x6700;&#x5C0F;&#x503C;&#x5927;&#x4E8E;trim&#x503C;&#xFF09;</h3>
+<p>&#x8BE5;&#x68C0;&#x6D4B;&#x4E3A;AC3.6&#x4EE5;&#x4E0A;&#x56FA;&#x4EF6;&#x65B0;&#x6DFB;&#x52A0;&#x7684;&#x68C0;&#x6D4B;&#xFF0C;&#x662F;&#x4E3A;&#x4E86;&#x66F4;&#x591A;&#x7528;&#x6237;&#x4E86;&#x89E3;&#x5230;rc10~rc16&#x901A;&#x9053;&#x662F;&#x53EF;&#x7528;&#x7684;&#x3002;&#x5982;&#x679C;&#x5728;&#x9065;&#x63A7;&#x5668;&#x6821;&#x51C6;&#x754C;&#x9762;&#x6CA1;&#x6709;&#x6821;&#x51C6;&#x8FD9;&#x4E9B;&#x901A;&#x9053;&#x5C31;&#x4F1A;&#x62A5;&#x9519;&#xFF0C;&#x5982;&#x679C;&#x60A8;&#x7684;&#x9065;&#x63A7;&#x5668;&#x63A5;&#x6536;&#x673A;&#x4E0D;&#x652F;&#x6301;&#x90A3;&#x4E48;&#x591A;&#x901A;&#x9053;&#xFF0C;&#x8BF7;&#x5728;&#x5168;&#x90E8;&#x53C2;&#x6570;&#x8868;&#x627E;&#x5230;rc<em>_trim&#x53C2;&#x6570;&#xFF08;</em>&#x4E3A;&#x901A;&#x9053;&#x53F7;&#xFF09;&#xFF0C;&#x5E76;&#x628A;&#x5B83;&#x8BBE;&#x7F6E;&#x6210;rc<em>_max&#x4E0E;rc</em>_min&#x4E4B;&#x95F4;&#x7684;&#x4EFB;&#x610F;&#x503C;&#x3002;</p>
+<h3 id="hardware-safety-switch&#x6CA1;&#x6709;&#x5B89;&#x5168;&#x5F00;&#x5173;&#x786C;&#x4EF6;&#xFF09;"><a name="hardware-safety-switch&#x6CA1;&#x6709;&#x5B89;&#x5168;&#x5F00;&#x5173;&#x786C;&#x4EF6;&#xFF09;" class="plugin-anchor" href="#hardware-safety-switch&#x6CA1;&#x6709;&#x5B89;&#x5168;&#x5F00;&#x5173;&#x786C;&#x4EF6;&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>Hardware safety switch(&#x6CA1;&#x6709;&#x5B89;&#x5168;&#x5F00;&#x5173;&#x786C;&#x4EF6;&#xFF09;</h3>
+<p>&#x8BE5;&#x9519;&#x8BEF;&#x63D0;&#x793A;&#x5B9E;&#x9645;&#x5E76;&#x975E;&#x5B57;&#x9762;&#x610F;&#x601D;&#xFF0C;&#x8FD9;&#x53EF;&#x80FD;&#x662F;&#x60A8;&#x5DF2;&#x7ECF;&#x8FDE;&#x63A5;&#x4E86;&#x5B89;&#x5168;&#x5F00;&#x5173;&#x4F46;&#x6CA1;&#x89E3;&#x9501;&#x5B89;&#x5168;&#x5F00;&#x5173;&#x6216;&#x8005;&#x60A8;&#x6CA1;&#x6709;&#x5B89;&#x88C5;&#x5B89;&#x5168;&#x5F00;&#x5173;&#x4E14;&#x6CA1;&#x6709;&#x7981;&#x7528;&#x5B89;&#x5168;&#x5F00;&#x5173;&#x3002;<br>&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#xFF1A;<br>&#x957F;&#x6309;&#x5B89;&#x5168;&#x5F00;&#x5173;&#x81F3;&#x6307;&#x793A;&#x706F;&#x5E38;&#x4EAE;&#x3002;<br>&#x6216;&#x8005;<a href="http://doc.cuav.net/tutorial/copter/optional-hardware/buzzer.html" target="_blank">&#x7981;&#x7528;&#x5B89;&#x5168;&#x5F00;&#x5173;</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching "<span class="search-query"></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class="search-query"></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="load-firmware/px4-firmware.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: PX4原生固件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>var gitbook=gitbook||[];gitbook.push(function(){gitbook.page.hasChanged({page:{title:"Pre-arm报错信息分析",level:"1.6",depth:1,previous:{title:"PX4原生固件",level:"1.5.2",depth:2,path:"load-firmware/px4-firmware.md",ref:"load-firmware/px4-firmware.md",articles:[]},dir:"ltr"},config:{plugins:["anchors","back-to-top-button","page-toc-button","prism","richquotes","search-pro","toolbar","-fontsettings","-highlight","-livereload","-lunr","-search","-sharing","cuav-doc-chapters@git+https://github.com/cuav/gitbook-plugin-cuav-doc-chapters.git","cuav-doc-favicon@git+https://github.com/cuav/gitbook-plugin-cuav-doc-favicon.git","cuav-doc-navbar@git+https://github.com/cuav/gitbook-plugin-cuav-doc-navbar.git","cuav-fontsettings@git+https://github.com/cuav/gitbook-plugin-cuav-fontsettings.git","cuav-minifier@git+https://github.com/cuav/gitbook-plugin-cuav-minifier.git","cuav-renderer@git+https://github.com/cuav/gitbook-plugin-cuav-renderer.git","youtube"],styles:{website:"styles/website.css",pdf:"styles/pdf.css",epub:"styles/epub.css",mobi:"styles/mobi.css",ebook:"styles/ebook.css",print:"styles/print.css"},pluginsConfig:{"cuav-doc-chapters":{},prism:{},youtube:{},"search-pro":{},"cuav-renderer":{},"cuav-doc-navbar":{},"cuav-minifier":{},richquotes:{},"page-toc-button":{},"back-to-top-button":{},"cuav-fontsettings":{},"cuav-doc-favicon":{},toolbar:{buttons:[{label:"Bug tracker",icon:"fa fa-bug",position:"left",url:"https://github.com/cuav/doc-flight-controller-v5-autopilot/issues/new?title=Doc+Bug:+{{title}}&body=DESCRIBE+PROBLEM+WITH+DOCS+HERE%0A%0ABug+Page:+[{{title}}]({{url}})"},{label:"Edit page on github",icon:"fa fa-pencil-square-o",position:"left",url:"https://github.com/cuav/doc-flight-controller-v5-autopilot/edit/master/{{filepath_lang}}"},{label:"GitHub",icon:"fa fa-github",url:"https://github.com/cuav/doc-flight-controller-v5-autopilot"}]},"theme-default":{styles:{website:"styles/website.css",pdf:"styles/pdf.css",epub:"styles/epub.css",mobi:"styles/mobi.css",ebook:"styles/ebook.css",print:"styles/print.css"},showLevel:!1},anchors:{}},theme:"default",pdf:{pageNumbers:!0,fontSize:12,fontFamily:"Arial",paperSize:"a4",chapterMark:"pagebreak",pageBreaksBefore:"/",margin:{right:62,left:62,top:56,bottom:56}},structure:{langs:"LANGS.md",readme:"README.md",glossary:"GLOSSARY.md",summary:"SUMMARY.md"},variables:{},title:"v5-autopilot",language:"zh-hans",gitbook:"*",description:"v5飞行控制器说明文档"},file:{path:"pre-arm.md",mtime:"2019-03-11T06:39:39.107Z",type:"markdown"},gitbook:{version:"3.2.3",time:"2019-03-11T06:40:43.719Z"},basePath:".",book:{language:"zh-hans"}})})</script>
+</div>
+
+
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-toolbar/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-cuav-doc-chapters/cuav-doc-chapters.js"></script>
+        
+    
+
+    </body>
+</html>
+
